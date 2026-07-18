@@ -833,6 +833,8 @@ MonoBehaviour:
   TownMain: {fileID: 339833684}
   ListItemPrefab: {fileID: 8653965499866031017, guid: 6db621a0f99206144b7c91e94dbb356d, type: 3}
   OwnerItemPrefab: {fileID: 6290483170075809378, guid: abbfdddbc7cf9154388ddf34ac060490, type: 3}
+  buttonCat: {fileID: 1643153724}
+  catHome: {fileID: 410596028}
 --- !u!4 &233200778
 Transform:
   m_ObjectHideFlags: 0
@@ -1441,7 +1443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &410596029
 RectTransform:
   m_ObjectHideFlags: 0

@@ -33,11 +33,16 @@ public class TownMgr : MonoBehaviour
     GameState gameState;
     GameDatabase gameDatabase;
 
+    public Button buttonCat;
+    public GameObject catHome;
+
     public static TownMgr Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         Instance = this;
+        
+        buttonCat.onClick.AddListener(OnClickCatButton);
     }
 
     void Start()
@@ -48,12 +53,12 @@ public class TownMgr : MonoBehaviour
         FurnitureListBtn.onClick.AddListener(ShowItemList);
         OwnerListBtn.onClick.AddListener(ShowOwnerList);
     }
-    // Update is called once per frame
-    void Update()
+
+    void OnClickCatButton()
     {
-
+        catHome.SetActive(true);
     }
-
+    
     void OnInterviewBtnClick()
     {
         SceneManager.LoadScene("InterviewScene");
