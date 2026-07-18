@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class CatHome : MonoBehaviour
 {
     CatData currentCat; // 현재 선택된 고양이
-    ApplicantData currentApplicant; // 현재 선택된 지원자
+    ApplicantData currentApplicant; // 현재 선택된 집사
     public int servantId; // 현재 선택된 지원자의 ID (개발 시 탐색용)
 
     public Text servantNameText; // 임시 UI 텍스트, 실제 게임에서는 다른 UI 요소로 대체될 수 있음

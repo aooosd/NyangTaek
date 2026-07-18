@@ -6,11 +6,11 @@ public class GameDatabase : MonoBehaviour
     public ItemDatabase Items { get; private set; }
     public ApplicantDatabase Applicants { get; private set; }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
         Cats = JsonLoader.LoadData<CatDatabase>("CatData");
-        Items = JsonLoader.LoadData<ItemDatabase>("FurnitureData");
+        Items = JsonLoader.LoadData<ItemDatabase>("ItemData");
         Applicants = JsonLoader.LoadData<ApplicantDatabase>("ApplicantData");
     }
+
 }
