@@ -3,17 +3,19 @@ using UnityEngine.UI;
 
 public class CatHome : MonoBehaviour
 {
-    CatData currentCat; // ÇöÀç ¼±ÅÃµÈ °í¾çÀÌ
-    ApplicantData currentApplicant; // ÇöÀç ¼±ÅÃµÈ Áý»ç
-    public int servantId; // ÇöÀç ¼±ÅÃµÈ Áö¿øÀÚÀÇ ID (°³¹ß ½Ã Å½»ö¿ë)
+    CatData currentCat; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+    ApplicantData currentApplicant; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½
+    public int servantId; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ãµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ID (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Å½ï¿½ï¿½ï¿½ï¿½)
 
-    public Text servantNameText; // ÀÓ½Ã UI ÅØ½ºÆ®, ½ÇÁ¦ °ÔÀÓ¿¡¼­´Â ´Ù¸¥ UI ¿ä¼Ò·Î ´ëÃ¼µÉ ¼ö ÀÖÀ½
+    public Text servantNameText; // ï¿½Ó½ï¿½ UI ï¿½Ø½ï¿½Æ®, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ UI ï¿½ï¿½Ò·ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     GameState gameState;
+
+    public Image imageCat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameState = FindAnyObjectByType<GameState>();
-        servantId = 1; // ÀÓ½Ã·Î 1(ÀÌÀ¯³ª)·Î ¼³Á¤, ½ÇÁ¦·Î´Â °ÔÀÓ »óÅÂ¿¡ µû¶ó ´Ù¸£°Ô ¼³Á¤µÉ ¼ö ÀÖÀ½ 
+        servantId = 1; // ï¿½Ó½Ã·ï¿½ 1(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
     }
 
     // Update is called once per frame

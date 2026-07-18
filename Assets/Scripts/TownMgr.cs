@@ -34,15 +34,24 @@ public class TownMgr : MonoBehaviour
     GameDatabase gameDatabase;
 
     public Button buttonCat;
-    public GameObject catHome;
+    public CatHome catHome;
 
+    public Image imageCat;
+    public Sprite[] spritesCats;
+
+    public Button buttonRagdollCat;
+    public Button buttonCheeseCat;
+    public Button buttonFishCat;
+    
     public static TownMgr Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         Instance = this;
         
-        buttonCat.onClick.AddListener(OnClickCatButton);
+        buttonFishCat.onClick.AddListener(OnClickFishCat);
+        buttonCheeseCat.onClick.AddListener(OnClickCheeseCat);
+        buttonRagdollCat.onClick.AddListener(OnClickRagdollCat);
     }
 
     void Start()
@@ -54,9 +63,22 @@ public class TownMgr : MonoBehaviour
         OwnerListBtn.onClick.AddListener(ShowOwnerList);
     }
 
-    void OnClickCatButton()
+    void OnClickFishCat()
     {
-        catHome.SetActive(true);
+        catHome.gameObject.SetActive(true);
+        catHome.imageCat.sprite = spritesCats[0];
+    }
+    
+    void OnClickCheeseCat()
+    {
+        catHome.gameObject.SetActive(true);
+        catHome.imageCat.sprite = spritesCats[1];
+    }
+    
+    void OnClickRagdollCat()
+    {
+        catHome.gameObject.SetActive(true);
+        catHome.imageCat.sprite = spritesCats[2];
     }
     
     void OnInterviewBtnClick()
