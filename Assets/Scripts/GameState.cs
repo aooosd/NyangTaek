@@ -23,15 +23,27 @@ public class GameState : MonoBehaviour
         ownedItems.Clear();
         ownedApplicants.Clear();
         GameDatabase gameDataBase = FindAnyObjectByType<GameDatabase>();
+
         ownedCatIds.Add(1);
         ownedCatIds.Add(2);
         ownedCatIds.Add(3);
+
+        ownedApplicantIds.Add(1); 
+        ownedApplicantIds.Add(2);
         foreach (int catId in ownedCatIds)
         {
             CatData cat = gameDataBase.Cats.cats.Find(c => c.id == catId);
             if (cat != null)
             {
                 ownedCats.Add(cat);
+            }
+        }
+        foreach (int applicantId in ownedApplicantIds)
+        {
+            ApplicantData applicant = gameDataBase.Applicants.applicants.Find(a => a.id == applicantId);
+            if (applicant != null)
+            {
+                ownedApplicants.Add(applicant);
             }
         }
         Debug.Log("Owned Cats: " + ownedCats.Count);

@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\assets\\scripts\\cathome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\nyangtaek\\assets\\scripts\\cathome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cathome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|c:\\users\\user\\documents\\github\\nyangtaek\\assets\\scripts\\gamedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\assets\\scripts\\gamedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesavedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\townmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{830C4D03-CE14-E045-E0FB-0E391D32AB66}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interviewmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GameDatabase.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\GameDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameDatabase.cs",
@@ -74,12 +74,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameDatabase.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAUwA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T11:17:42.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-11T11:17:42.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ItemData.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\ItemData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ItemData.cs",
@@ -91,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "FurnitureData.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\FurnitureData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FurnitureData.cs",
@@ -103,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GameSaveData.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\GameSaveData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSaveData.cs",
@@ -115,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CatHome.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\CatHome.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CatHome.cs",
@@ -128,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "JsonLoader.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\JsonLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\JsonLoader.cs",
@@ -140,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ResumeMgr.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\ResumeMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResumeMgr.cs",
@@ -152,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CatData.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\CatData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CatData.cs",
@@ -164,7 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ApplicantData.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\ApplicantData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicantData.cs",
@@ -172,12 +171,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ApplicantData.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAADwvyUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T12:00:58.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T12:00:58.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GameState.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\GameState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameState.cs",
@@ -185,8 +183,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameState.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAADwvxwAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T13:12:45.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-17T13:12:45.816Z"
             },
             {
               "$type": "Document",
@@ -202,15 +199,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "TownMgr.cs",
               "DocumentMoniker": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TownMgr.cs",
               "ToolTip": "C:\\Users\\user\\Documents\\GitHub\\NyangTaek\\Assets\\Scripts\\TownMgr.cs",
               "RelativeToolTip": "Assets\\Scripts\\TownMgr.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwCEAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwEMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T15:24:23.47Z"
+              "WhenOpened": "2026-06-10T15:24:23.47Z",
+              "EditorCaption": ""
             }
           ]
         }

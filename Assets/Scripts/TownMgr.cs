@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public interface IData
 {
     string GetName();
+
 }
 
 public class TownMgr : MonoBehaviour
@@ -36,13 +37,17 @@ public class TownMgr : MonoBehaviour
     public Button buttonCat;
     public CatHome catHome;
 
+    [Header("Cat Sprites")]
     public Image imageCat;
     public Sprite[] spritesCats;
 
     public Button buttonRagdollCat;
     public Button buttonCheeseCat;
     public Button buttonFishCat;
-    
+
+    [Header("Applicant Sprites")]
+    public Sprite[] spritesApplicants;
+
     public static TownMgr Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -128,12 +133,13 @@ public class TownMgr : MonoBehaviour
         where T : IData
     {
         Debug.Log(content.name);
-        foreach (var cat in list)
+        foreach (var obj in list)
         {
             GameObject item = Instantiate(listItemPrefab, content);
-            item.transform.Find("Button/Name").GetComponent<Text>().text = cat.GetName();
-            //item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + cat.stability;
-            Debug.Log("Added item: " + cat.GetName());
+            item.transform.Find("Button/Name").GetComponent<Text>().text = obj.GetName();
+            //item.transform.Find("Image").GetComponent<Image>().sprite = obj.GetImage();
+            //item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + obj.stability;
+            Debug.Log("Added item: " + obj.GetName());
         }
     }
 
