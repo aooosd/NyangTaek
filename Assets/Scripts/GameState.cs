@@ -40,7 +40,9 @@ public class GameState : MonoBehaviour
         }
         foreach (int applicantId in ownedApplicantIds)
         {
-            ApplicantData applicant = gameDataBase.Applicants.applicants.Find(a => a.id == applicantId);
+            //ApplicantData applicant = gameDataBase.Applicants.applicants.Find(a => a.id == applicantId);
+            ApplicantData applicant = gameDataBase.Applicants.ApplicantsDictionary[applicantId];
+            
             if (applicant != null)
             {
                 ownedApplicants.Add(applicant);

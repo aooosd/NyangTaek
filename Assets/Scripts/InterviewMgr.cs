@@ -11,7 +11,7 @@ public class InterviewMgr : MonoBehaviour
     int maxQuestionCount = 3;
 
     [Header("Interview")]
-    // ±âº» Çàµ¿ ¹öÆ°µé
+    // ï¿½âº» ï¿½àµ¿ ï¿½ï¿½Æ°ï¿½ï¿½
     public Button ApproachBtn;
     public Button StareBtn;
     public Button SmellBtn;
@@ -20,7 +20,7 @@ public class InterviewMgr : MonoBehaviour
     public Button AcceptBtn;
     public Button RejectBtn;
 
-    public GameObject ExActPanel; // Ãß°¡ Çàµ¿ ÆÐ³Î
+    public GameObject ExActPanel; // ï¿½ß°ï¿½ ï¿½àµ¿ ï¿½Ð³ï¿½
 
     public Text CountText;
 
@@ -40,7 +40,7 @@ public class InterviewMgr : MonoBehaviour
     public GameObject memoPanel;
     public GameObject documentPanel;
 
-    string catName = "°í¾çÀÌ";
+    string catName = "ï¿½ï¿½ï¿½ï¿½ï¿½";
 
     bool hasApproached = false;
     bool hasStared = false;
@@ -52,7 +52,7 @@ public class InterviewMgr : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Index = 0; // ÇöÀç ¸éÁ¢ º¸°í ÀÖ´Â Áö¿øÀÚÀÇ ÀÎµ¦½º
+        Index = 0; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
         gameState = FindAnyObjectByType<GameState>();
         gameDatabase = FindAnyObjectByType<GameDatabase>();
         ApproachBtn.onClick.AddListener(Approach);
@@ -80,7 +80,7 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         questionCount = 0;
-        string spriteURL = gameDatabase.Applicants.applicants[Index].image_url;
+        string spriteURL = gameDatabase.Applicants.ApplicantsDictionary[Index].image_url;
         if (spriteURL != null)
             applicantImage.sprite = Resources.Load<Sprite>("Images/" + spriteURL);
     }
@@ -88,19 +88,19 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasApproached)
-            return;     // ÀÌ¹Ì ´Ù°¡°£ °æ¿ì ¹«½Ã
+            return;     // ï¿½Ì¹ï¿½ ï¿½Ù°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         hasApproached = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // ÃÖ´ë Áú¹® ¼ö¸¦ ÃÊ°úÇÑ °æ¿ì ¹«½Ã
+            return;     // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         questionCount++;
-        AddLog(catName, "´Ù°¡°£´Ù");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_approach);
+        AddLog(catName, "ï¿½Ù°ï¿½ï¿½ï¿½ï¿½ï¿½");
+        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_approach);
 
-        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex1));
-        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex2));
+        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_approach_ex1));
+        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_approach_ex2));
         ExActPanel.SetActive(true);
         
     }
@@ -109,48 +109,48 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasStared)
-            return;     // ÀÌ¹Ì ³ë·Áº» °æ¿ì ¹«½Ã
+            return;     // ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         hasStared = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // ÃÖ´ë Áú¹® ¼ö¸¦ ÃÊ°úÇÑ °æ¿ì ¹«½Ã
+            return;     // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         questionCount++;
-        AddLog(catName,"³ë·Áº»´Ù");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_stare);
+        AddLog(catName,"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_stare);
     }
 
     void Smell()
     {
         //
         if (hasSmelled)
-            return;     // ÀÌ¹Ì ³¿»õ ¸ÃÀº °æ¿ì ¹«½Ã
+            return;     // ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         hasSmelled = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // ÃÖ´ë Áú¹® ¼ö¸¦ ÃÊ°úÇÑ °æ¿ì ¹«½Ã
+            return;     // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         questionCount++;
-        AddLog(catName, "³¿»õ ¸Ã´Â´Ù");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_smell);
+        AddLog(catName, "ï¿½ï¿½ï¿½ï¿½ ï¿½Ã´Â´ï¿½");
+        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_smell);
     }
 
     void Ignore()
     {
         //
         if (hasIgnored)
-            return;     // ÀÌ¹Ì ¹«½ÃÇÑ °æ¿ì ¹«½Ã
+            return;     // ï¿½Ì¹ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         hasIgnored = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // ÃÖ´ë Áú¹® ¼ö¸¦ ÃÊ°úÇÑ °æ¿ì ¹«½Ã
+            return;     // ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         questionCount++;
-        AddLog(catName, "¹«½ÃÇÑ´Ù");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_ignore);
+        AddLog(catName, "ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½");
+        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_ignore);
     }
 
     void Decide()
@@ -163,13 +163,13 @@ public class InterviewMgr : MonoBehaviour
     {
         if (isPassed)
         {
-            ResultText.text = "ÇÕ°ÝÀÔ´Ï´Ù!";
-            gameState.ownedApplicantIds.Add(gameDatabase.Applicants.applicants[Index].id);
+            ResultText.text = "ï¿½Õ°ï¿½ï¿½Ô´Ï´ï¿½!";
+            gameState.ownedApplicantIds.Add(gameDatabase.Applicants.ApplicantsDictionary[Index].id);
         }
         else
         {
-            ResultText.text = "ºÒÇÕ°ÝÀÔ´Ï´Ù!";
-            gameState.ownedApplicantIds.Remove(gameDatabase.Applicants.applicants[Index].id);    // ºÒÇÕ°Ý ÀúÀå (1Àº ÇÕ°Ý, 0Àº ºÒÇÕ°Ý)
+            ResultText.text = "ï¿½ï¿½ï¿½Õ°ï¿½ï¿½Ô´Ï´ï¿½!";
+            gameState.ownedApplicantIds.Remove(gameDatabase.Applicants.ApplicantsDictionary[Index].id);    // ï¿½ï¿½ï¿½Õ°ï¿½ ï¿½ï¿½ï¿½ï¿½ (1ï¿½ï¿½ ï¿½Õ°ï¿½, 0ï¿½ï¿½ ï¿½ï¿½ï¿½Õ°ï¿½)
         }
 
         GanteakPanel.SetActive(false);
@@ -206,18 +206,18 @@ public class InterviewMgr : MonoBehaviour
 
     void ShowCount()
     {
-        CountText.text = "³²Àº Çàµ¿\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
+        CountText.text = "ï¿½ï¿½ï¿½ï¿½ ï¿½àµ¿\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
     }
 
     public void ShowMemo()
     {
-        // ¸Þ¸ð º¸¿©ÁÖ´Â ÇÔ¼ö
+        // ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ ï¿½Ô¼ï¿½
         memoPanel.SetActive(true);
     }
 
     public void HideMemo()
     {
-        // ¸Þ¸ð ¼û±â´Â ÇÔ¼ö
+        // ï¿½Þ¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
         memoPanel.SetActive(false);
     }
 

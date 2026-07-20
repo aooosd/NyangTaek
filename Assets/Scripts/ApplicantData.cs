@@ -8,9 +8,9 @@ public class ApplicantData : IData
     public string name;
     public string job;
     public string career;
-    public string feature1;
-    public string feature2;
-    public string feature3;
+    public string feature1;     // 특징
+    public string feature2;     // 특징
+    public string feature3;     // 특징
     public string reaction_approach;
     public string reaction_approach_ex1;
     public string reaction_approach_ex2;
@@ -23,6 +23,8 @@ public class ApplicantData : IData
     public string reaction_ignore;
     public string reaction_ignore_ex1;
     public string reaction_ignore_ex2;
+    public string pros; // 장점
+    public string cons; // 단점
     public int closeness;
     public int activity;
     public int independence;
@@ -37,5 +39,6 @@ public class ApplicantData : IData
 [System.Serializable]
 public class ApplicantDatabase
 {
-    public List<ApplicantData> applicants;
+    //public List<ApplicantData> applicants;
+    public Dictionary<int, ApplicantData> ApplicantsDictionary = new Dictionary<int, ApplicantData>();
 }
