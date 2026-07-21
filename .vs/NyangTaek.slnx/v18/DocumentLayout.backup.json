@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|g:\\project_unity\\main\\nyangtaek\\assets\\scripts\\ui\\resumemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\resumemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|g:\\project_unity\\main\\nyangtaek\\assets\\scripts\\gamedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|g:\\project_unity\\main\\nyangtaek\\assets\\scripts\\ui\\resumeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\resumeview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,6 +17,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|g:\\project_unity\\main\\nyangtaek\\assets\\scripts\\cathome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cathome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|g:\\project_unity\\main\\nyangtaek\\assets\\scripts\\ui\\resumemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\resumemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|g:\\project_unity\\main\\nyangtaek\\assets\\scripts\\resumemgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,24 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GameDatabase.cs",
-              "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\GameDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameDatabase.cs",
-              "ToolTip": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\GameDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T13:04:43.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "GameState.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\GameState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameState.cs",
@@ -71,11 +54,12 @@
               "RelativeToolTip": "Assets\\Scripts\\GameState.cs",
               "ViewState": "AgIAABIAAAAAAAAAAADgvx0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T11:58:09.004Z"
+              "WhenOpened": "2026-07-21T11:58:09.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CatHome.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\CatHome.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CatHome.cs",
@@ -83,37 +67,38 @@
               "RelativeToolTip": "Assets\\Scripts\\CatHome.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T11:57:27.013Z"
+              "WhenOpened": "2026-07-21T11:57:27.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ResumeView.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\UI\\ResumeView.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ResumeView.cs",
               "ToolTip": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\UI\\ResumeView.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\ResumeView.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAnwBUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAIA8wBUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-21T11:04:05.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ResumeModel.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\UI\\ResumeModel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ResumeModel.cs",
               "ToolTip": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\UI\\ResumeModel.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\ResumeModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-21T11:04:05.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "CatData.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\CatData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CatData.cs",
@@ -121,11 +106,12 @@
               "RelativeToolTip": "Assets\\Scripts\\CatData.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T10:54:42.824Z"
+              "WhenOpened": "2026-07-21T10:54:42.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ApplicantData.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\ApplicantData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicantData.cs",
@@ -133,11 +119,12 @@
               "RelativeToolTip": "Assets\\Scripts\\ApplicantData.cs",
               "ViewState": "AgIAAGMAAAAAAAAAAAAmwG4AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T10:54:38.692Z"
+              "WhenOpened": "2026-07-21T10:54:38.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "ResumeMgr.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\ResumeMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ResumeMgr.cs",
@@ -145,11 +132,12 @@
               "RelativeToolTip": "Assets\\Scripts\\ResumeMgr.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T10:51:25.002Z"
+              "WhenOpened": "2026-07-21T10:51:25.002Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "InterviewMgr.cs",
               "DocumentMoniker": "G:\\PROJECT_UNITY\\MAIN\\NyangTaek\\Assets\\Scripts\\InterviewMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InterviewMgr.cs",
@@ -157,7 +145,8 @@
               "RelativeToolTip": "Assets\\Scripts\\InterviewMgr.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAzwA0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T10:51:25.047Z"
+              "WhenOpened": "2026-07-21T10:51:25.047Z",
+              "EditorCaption": ""
             }
           ]
         }
