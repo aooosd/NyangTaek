@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class ResumeMgr : MonoBehaviour
@@ -18,8 +18,8 @@ public class ResumeMgr : MonoBehaviour
     {
         Index = GlobalValue.interviewIndex;
         NameText.text = "" + JsonLoader.Instance.applicantsList.applicants[Index].name;
-        JobText.text = "Á÷¾÷: " + JsonLoader.Instance.applicantsList.applicants[Index].job;
-        CareerText.text = "°æ·Â: " + JsonLoader.Instance.applicantsList.applicants[Index].career;
+        JobText.text = "ï¿½ï¿½ï¿½ï¿½: " + JsonLoader.Instance.applicantsList.applicants[Index].job;
+        CareerText.text = "ï¿½ï¿½ï¿½: " + JsonLoader.Instance.applicantsList.applicants[Index].career;
         Feature1Text.text = "" + JsonLoader.Instance.applicantsList.applicants[Index].feature1;
         Feature2Text.text = "" + JsonLoader.Instance.applicantsList.applicants[Index].feature2;
         Feature3Text.text = "" + JsonLoader.Instance.applicantsList.applicants[Index].feature3;
@@ -35,7 +35,7 @@ public class ResumeMgr : MonoBehaviour
 
     void StartInterview()
     {
-        // ¹öÆ° Å¬¸¯ ½Ã ÀÎÅÍºä È­¸éÀ¸·Î ÀÌµ¿
+        // ï¿½ï¿½Æ° Å¬ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Íºï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
         SceneManager.LoadScene("InterviewScene");
     }*/
 }

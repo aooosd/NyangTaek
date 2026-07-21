@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -35,7 +35,19 @@ public class ResumeView : MonoBehaviour
 
     public void Initialize()
     {
-        nameText.text = resumeModel.applicantData.name;
+        ApplicantData data = resumeModel.applicantData;
+
+        // TODO: 기획팀에게 초기화할 stat 알려달라고 해주세요.
+        data.Initialize(3, 5, 4);
+
+        nameText.text = data.name;
+        jobText.text = data.job;
+        ageText.text = data.age.ToString();
+
+        hashtagText_0.text = "#" + data.ConvertToHashTag(StatType.activity);
+        hashtagText_1.text = "#" + data.ConvertToHashTag(StatType.independence);
+        hashtagText_2.text = "#" + data.ConvertToHashTag(StatType.closeness);
         
+
     }
 }
