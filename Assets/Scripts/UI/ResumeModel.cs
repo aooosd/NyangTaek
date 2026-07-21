@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class ResumeModel : MonoBehaviour
 {
-    public ApplicantData applicantData;
+    [HideInInspector] public ApplicantData applicantData;
     public int id = 1;
     
-    private void Awake()
+    private void Start()
     {
         GameDatabase gameDatabase = FindAnyObjectByType<GameDatabase>();
-        applicantData = gameDatabase.Applicants.ApplicantsDictionary[id];
+        Debug.Log(gameDatabase.Applicants.applicants[0]);
+        applicantData = gameDatabase.Applicants.applicants[0];
     }
 }

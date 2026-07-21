@@ -51,17 +51,20 @@ public class ApplicantData : IData
     public string reaction_ignore_ex1;
     public string reaction_ignore_ex2;
     public string pros; // 장점
-    public string cons; // 단점    
+    public string cons; // 단점
+    public int closeness;
+    public int activity;
+    public int independence;
     public string image_url;
 
-    public ApplicantVariable variable;
+    //public ApplicantVariable variable;
 
     public string GetName()
     {
         return name;
     }
 
-    public void Initialize(int _activity, int _independence, int _closeness)
+    /*public void Initialize(int _activity, int _independence, int _closeness)
     {
         // TEST
         //variable = new ApplicantVariable(3, 5, 4);
@@ -139,11 +142,12 @@ public class ApplicantData : IData
         }
 
         return null;       
-    }
+    }*/
 }
 
 [System.Serializable]
 public class ApplicantDatabase
 {
-    public Dictionary<int, ApplicantData> ApplicantsDictionary = new Dictionary<int, ApplicantData>();
+    public List<ApplicantData> applicants = new List<ApplicantData>();
+    //public Dictionary<int, ApplicantData> ApplicantsDictionary = new Dictionary<int, ApplicantData>();
 }

@@ -11,6 +11,7 @@ public class GameDatabase : MonoBehaviour
         Cats = JsonLoader.LoadData<CatDatabase>("CatData");
         Items = JsonLoader.LoadData<ItemDatabase>("ItemData");
         Applicants = JsonLoader.LoadData<ApplicantDatabase>("ApplicantData");
+        Debug.Log("GameDatabase loaded successfully.");
     }
 
 }

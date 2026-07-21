@@ -80,7 +80,7 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         questionCount = 0;
-        string spriteURL = gameDatabase.Applicants.ApplicantsDictionary[Index].image_url;
+        string spriteURL = gameDatabase.Applicants.applicants[Index].image_url;
         if (spriteURL != null)
             applicantImage.sprite = Resources.Load<Sprite>("Images/" + spriteURL);
     }
@@ -97,10 +97,10 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "�ٰ�����");
-        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_approach);
+        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_approach);
 
-        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_approach_ex1));
-        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_approach_ex2));
+        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex1));
+        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex2));
         ExActPanel.SetActive(true);
         
     }
@@ -118,7 +118,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName,"�������");
-        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_stare);
+        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_stare);
     }
 
     void Smell()
@@ -134,7 +134,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "���� �ô´�");
-        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_smell);
+        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_smell);
     }
 
     void Ignore()
@@ -150,7 +150,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "�����Ѵ�");
-        AddLog(gameDatabase.Applicants.ApplicantsDictionary[Index].name, gameDatabase.Applicants.ApplicantsDictionary[Index].reaction_ignore);
+        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_ignore);
     }
 
     void Decide()
@@ -164,12 +164,12 @@ public class InterviewMgr : MonoBehaviour
         if (isPassed)
         {
             ResultText.text = "�հ��Դϴ�!";
-            gameState.ownedApplicantIds.Add(gameDatabase.Applicants.ApplicantsDictionary[Index].id);
+            gameState.ownedApplicantIds.Add(gameDatabase.Applicants.applicants[Index].id);
         }
         else
         {
             ResultText.text = "���հ��Դϴ�!";
-            gameState.ownedApplicantIds.Remove(gameDatabase.Applicants.ApplicantsDictionary[Index].id);    // ���հ� ���� (1�� �հ�, 0�� ���հ�)
+            gameState.ownedApplicantIds.Remove(gameDatabase.Applicants.applicants[Index].id);    // ���հ� ���� (1�� �հ�, 0�� ���հ�)
         }
 
         GanteakPanel.SetActive(false);

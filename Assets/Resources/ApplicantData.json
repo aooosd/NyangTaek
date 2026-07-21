@@ -50,9 +50,9 @@
         "reaction_ignore_ex2": "무시할 시 김철민에 대한 추가 반응2입니다",
         "pros": "철민 장점",
         "cons": "철민 단점",
-        "independence": 1,  // 독립성
-        "activity": 1,      // 활동성
-        "closeness": 3,     // 밀착도
+        "independence": 1,  
+        "activity": 1,      
+        "closeness": 3,     
         "image_url": "applicant2"
     }
     ]
