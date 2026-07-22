@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 public class ResumeModel : MonoBehaviour
@@ -11,5 +11,6 @@ public class ResumeModel : MonoBehaviour
         GameDatabase gameDatabase = FindAnyObjectByType<GameDatabase>();
         Debug.Log(gameDatabase.Applicants.applicants[0]);
         applicantData = gameDatabase.Applicants.applicants[0];
+        applicantData.Initialize(3, 3, 3);
     }
 }

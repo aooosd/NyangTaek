@@ -19,9 +19,9 @@ public class ResumeView : MonoBehaviour
     public TextMeshProUGUI prosText;
     public TextMeshProUGUI consText;
     public TextMeshProUGUI featuresText_0;
-    //public TextMeshProUGUI featuresText_1;
-    //public TextMeshProUGUI featuresText_2;
-    
+    public TextMeshProUGUI featuresText_1;
+    public TextMeshProUGUI featuresText_2;
+
     private void Awake()
     {
         resumeModel = GetComponent<ResumeModel>();
@@ -44,12 +44,14 @@ public class ResumeView : MonoBehaviour
         jobText.text = data.job;
         ageText.text = data.age.ToString();
 
-        //hashtagText_0.text = "#" + data.ConvertToHashTag(StatType.activity);
-        //hashtagText_1.text = "#" + data.ConvertToHashTag(StatType.independence);
-        //hashtagText_2.text = "#" + data.ConvertToHashTag(StatType.closeness);
-        
+        hashtagText_0.text = "#" + data.ConvertToHashTag(StatType.activity);
+        hashtagText_1.text = "#" + data.ConvertToHashTag(StatType.independence);
+        hashtagText_2.text = "#" + data.ConvertToHashTag(StatType.closeness);
+
         prosText.text = data.pros;
         consText.text = data.cons;
         featuresText_0.text = data.feature1;
+        featuresText_1.text = data.feature2;
+        featuresText_2.text = data.feature3;
     }
 }
