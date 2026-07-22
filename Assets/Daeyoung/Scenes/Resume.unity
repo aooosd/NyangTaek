@@ -1188,9 +1188,9 @@ MonoBehaviour:
   hashtagText_2: {fileID: 262962280}
   prosText: {fileID: 973144369}
   consText: {fileID: 1330538062}
-  featuresText_0: {fileID: 0}
-  featuresText_1: {fileID: 0}
-  featuresText_2: {fileID: 0}
+  featuresText_0: {fileID: 269635512496683909}
+  featuresText_1: {fileID: 1695788725}
+  featuresText_2: {fileID: 1087097617}
 --- !u!114 &965505606
 MonoBehaviour:
   m_ObjectHideFlags: 0
