@@ -8,9 +8,30 @@ public enum StatType
     closeness
 }
 
+public enum TagName
+{
+    Independent = 0,  // 독립적
+    Dependent,        // 의존적
+
+    Introvert, // 내향적
+    Active,    // 활동적
+
+    Affection, // 애정파
+    Individual // 개인파
+}
+
+public class HashTag
+{
+    public TagName tagName;    
+    public Color textColor;
+    public string text;
+}
+
 [System.Serializable]
 public class ApplicantVariable
 {
+    public HashTag hashTag;
+
     public int closeness;       // 밀착도
     public int activity;        // 활동성
     public int independence;    // 독립성
@@ -35,9 +56,11 @@ public class ApplicantData : IData
     public string name;
     public string job;
     public int age;             // 나이
+
     public string feature1;     // 특징
     public string feature2;     // 특징
     public string feature3;     // 특징
+
     public string reaction_approach;
     public string reaction_approach_ex1;
     public string reaction_approach_ex2;
@@ -50,11 +73,14 @@ public class ApplicantData : IData
     public string reaction_ignore;
     public string reaction_ignore_ex1;
     public string reaction_ignore_ex2;
+
     public string pros; // 장점
     public string cons; // 단점
-    public int closeness;
-    public int activity;
-    public int independence;
+
+    public int closeness;       // 밀착도
+    public int activity;        // 활동성
+    public int independence;    // 독립성
+
     public string image_url;
 
     public ApplicantVariable variable;
