@@ -27,3 +27,5 @@ Thumbs.db
 *.user
 *.userprefs
 *.v2
+/.vs
+/.vs/NyangTaek.slnx
