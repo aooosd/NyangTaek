@@ -31,9 +31,6 @@ public class TownMgr : MonoBehaviour
     public GameObject ListItemPrefab;
     public GameObject OwnerItemPrefab;
 
-    GameState gameState;
-    GameDatabase gameDatabase;
-
     public Button buttonCat;
     public CatHome catHome;
 
@@ -48,24 +45,22 @@ public class TownMgr : MonoBehaviour
     [Header("Applicant Sprites")]
     public Sprite[] spritesApplicants;
 
-    public static TownMgr Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        Instance = this;
-        
         buttonFishCat.onClick.AddListener(OnClickFishCat);
         buttonCheeseCat.onClick.AddListener(OnClickCheeseCat);
         buttonRagdollCat.onClick.AddListener(OnClickRagdollCat);
-    }
-
-    void Start()
-    {
-        gameState = FindAnyObjectByType<GameState>();
         InterviewBtn.onClick.AddListener(OnInterviewBtnClick);
         CatListBtn.onClick.AddListener(ShowCatList);
         FurnitureListBtn.onClick.AddListener(ShowItemList);
         OwnerListBtn.onClick.AddListener(ShowOwnerList);
+    }
+
+    void Start()
+    {
+        Debug.Log("start");
+        
     }
 
     void OnClickFishCat()
@@ -97,21 +92,21 @@ public class TownMgr : MonoBehaviour
     public void ShowCatList()
     {
         TownMain.SetActive(false);
-        RefreshList(gameState.ownedCats, CatListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
+        RefreshList(GameState.Instance.ownedCats, CatListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
         CatListPanel.SetActive(true);
     }
 
     public void ShowOwnerList()
     {
         TownMain.SetActive(false);
-        RefreshList(gameState.ownedApplicants, OwnerListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
+        RefreshList(GameState.Instance.ownedApplicants, OwnerListPanel.transform.Find("Scroll View/Viewport/Content"), OwnerItemPrefab);
         OwnerListPanel.SetActive(true);
     }
 
     public void ShowItemList()
     {
         TownMain.SetActive(false);
-        RefreshList(gameState.ownedItems, FurnitureListPanel.transform.Find("Scroll View/Viewport/Content"), ListItemPrefab);
+        RefreshList(GameState.Instance.ownedItems, FurnitureListPanel.transform.Find("Scroll View/Viewport/Content"), ListItemPrefab);
         FurnitureListPanel.SetActive(true);
     }
 

@@ -47,14 +47,10 @@ public class InterviewMgr : MonoBehaviour
     bool hasSmelled = false;
     bool hasThreatened = false;
 
-    GameState gameState;
-    GameDatabase gameDatabase;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Index = 0; // ���� ���� ���� �ִ� �������� �ε���
-        gameState = FindAnyObjectByType<GameState>();
-        gameDatabase = FindAnyObjectByType<GameDatabase>();
         ApproachBtn.onClick.AddListener(Approach);
         StareBtn.onClick.AddListener(Stare);
         SmellBtn.onClick.AddListener(Smell);
@@ -80,7 +76,7 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         questionCount = 0;
-        string spriteURL = gameDatabase.Applicants.applicants[Index].image_url;
+        string spriteURL = GameDatabase.Instance.Applicants.applicants[Index].image_url;
         if (spriteURL != null)
             applicantImage.sprite = Resources.Load<Sprite>("Sprites/" + spriteURL);
     }
@@ -97,10 +93,10 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "다가간다");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_approach);
+        AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_approach);
 
-       /* ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex1));
-        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex2));
+       /* ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(GameDatabase.Instance.Applicants.applicants[Index].reaction_approach_ex1));
+        ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(GameDatabase.Instance.Applicants.applicants[Index].reaction_approach_ex2));
         ExActPanel.SetActive(true);*/
         
     }
@@ -118,7 +114,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName,"노려본다");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_stare);
+        AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_stare);
     }
 
     void Smell()
@@ -134,7 +130,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "냄새 맡는다");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_smell);
+        AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_smell);
     }
 
     void Threat()
@@ -150,7 +146,7 @@ public class InterviewMgr : MonoBehaviour
 
         questionCount++;
         AddLog(catName, "위협한다");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_threat);
+        AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_threat);
     }
 
     void Decide()
@@ -163,13 +159,13 @@ public class InterviewMgr : MonoBehaviour
     {
         if (isPassed)
         {
-            ResultText.text = "�հ��Դϴ�!";
-            gameState.ownedApplicantIds.Add(gameDatabase.Applicants.applicants[Index].id);
+            ResultText.text = "간택했습니다!";
+            GameState.Instance.ownedApplicantIds.Add(GameDatabase.Instance.Applicants.applicants[Index].id);
         }
         else
         {
-            ResultText.text = "���հ��Դϴ�!";
-            gameState.ownedApplicantIds.Remove(gameDatabase.Applicants.applicants[Index].id);    // ���հ� ���� (1�� �հ�, 0�� ���հ�)
+            ResultText.text = "간택하지 않았습니다!";
+            GameState.Instance.ownedApplicantIds.Remove(GameDatabase.Instance.Applicants.applicants[Index].id);    // ���հ� ���� (1�� �հ�, 0�� ���հ�)
         }
 
         GanteakPanel.SetActive(false);
@@ -206,7 +202,7 @@ public class InterviewMgr : MonoBehaviour
 
     void ShowCount()
     {
-        CountText.text = "���� �ൿ\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
+        CountText.text = "남은 행동\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
     }
 
     public void ShowMemo()

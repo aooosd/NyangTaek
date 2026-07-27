@@ -8,9 +8,8 @@ public class ResumeModel : MonoBehaviour
     
     private void Start()
     {
-        GameDatabase gameDatabase = FindAnyObjectByType<GameDatabase>();
-        Debug.Log(gameDatabase.Applicants.applicants[0]);
-        applicantData = gameDatabase.Applicants.applicants[0];
+        Debug.Log(GameDatabase.Instance.Applicants.applicants[0]);
+        applicantData = GameDatabase.Instance.Applicants.applicants[0];
         applicantData.Initialize(3, 3, 3);
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class GameState : MonoBehaviour
+public class GameState : Singleton<GameState>
 {
     public List<CatData> ownedCats = new List<CatData>();
     public List<ItemData> ownedItems = new List<ItemData>();
@@ -12,9 +12,9 @@ public class GameState : MonoBehaviour
     public List<int> ownedApplicantIds = new List<int>();
     public int coin = 0;
 
-    void Awake()
+    protected override void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        base.Awake();
     }
 
     private void Start()
@@ -22,17 +22,16 @@ public class GameState : MonoBehaviour
         ownedCats.Clear();
         ownedItems.Clear();
         ownedApplicants.Clear();
-        GameDatabase gameDataBase = FindAnyObjectByType<GameDatabase>();
 
         ownedCatIds.Add(1);
         ownedCatIds.Add(2);
         ownedCatIds.Add(3);
 
-        ownedApplicantIds.Add(1); 
+        //ownedApplicantIds.Add(1); 
         ownedApplicantIds.Add(2);
         foreach (int catId in ownedCatIds)
         {
-            CatData cat = gameDataBase.Cats.cats.Find(c => c.id == catId);
+            CatData cat = GameDatabase.Instance.Cats.cats.Find(c => c.id == catId);
             if (cat != null)
             {
                 ownedCats.Add(cat);
@@ -40,7 +39,7 @@ public class GameState : MonoBehaviour
         }
         foreach (int applicantId in ownedApplicantIds)
         {
-            ApplicantData applicant = gameDataBase.Applicants.applicants.Find(a => a.id == applicantId);
+            ApplicantData applicant = GameDatabase.Instance.Applicants.applicants.Find(a => a.id == applicantId);
             
             if (applicant != null)
             {
