@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class CatHome : MonoBehaviour
@@ -7,7 +8,7 @@ public class CatHome : MonoBehaviour
     ApplicantData currentApplicant; // ���� ���õ� ����
     public int servantId; // ���� ���õ� �������� ID (���� �� Ž����)
 
-    public Text servantNameText; // �ӽ� UI �ؽ�Ʈ, ���� ���ӿ����� �ٸ� UI ��ҷ� ��ü�� �� ����
+    public TextMeshProUGUI servantNameText; // �ӽ� UI �ؽ�Ʈ, ���� ���ӿ����� �ٸ� UI ��ҷ� ��ü�� �� ����
     GameState gameState;
 
     public Image imageCat;
@@ -21,9 +22,9 @@ public class CatHome : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (servantId >= 0 && servantId < gameState.ownedApplicants.Count)
+        if (servantId >= 0 && servantId < gameState.ownedApplicants.Count)
         {
-            servantNameText.text = gameState.ownedApplicants[servantId].GetName();
-        }*/
+            servantNameText.text = "현재 집사\n" + gameState.ownedApplicants[servantId].GetName();
+        }
     }
 }

@@ -70,9 +70,9 @@ public class ApplicantData : IData
     public string reaction_smell;
     public string reaction_smell_ex1;
     public string reaction_smell_ex2;
-    public string reaction_ignore;
-    public string reaction_ignore_ex1;
-    public string reaction_ignore_ex2;
+    public string reaction_threat;
+    public string reaction_threat_ex1;
+    public string reaction_threat_ex2;
 
     public string pros; // 장점
     public string cons; // 단점

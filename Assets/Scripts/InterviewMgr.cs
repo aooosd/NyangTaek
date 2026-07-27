@@ -40,12 +40,12 @@ public class InterviewMgr : MonoBehaviour
     public GameObject memoPanel;
     public GameObject documentPanel;
 
-    string catName = "�����";
+    string catName = "고양이";
 
     bool hasApproached = false;
     bool hasStared = false;
     bool hasSmelled = false;
-    bool hasIgnored = false;
+    bool hasThreatened = false;
 
     GameState gameState;
     GameDatabase gameDatabase;
@@ -58,7 +58,7 @@ public class InterviewMgr : MonoBehaviour
         ApproachBtn.onClick.AddListener(Approach);
         StareBtn.onClick.AddListener(Stare);
         SmellBtn.onClick.AddListener(Smell);
-        IgnoreBtn.onClick.AddListener(Ignore);
+        IgnoreBtn.onClick.AddListener(Threat);
 
         GanteakPanel.SetActive(false);
         DecideBtn.onClick.AddListener(Decide);
@@ -67,7 +67,7 @@ public class InterviewMgr : MonoBehaviour
         //NextBtn.onClick.AddListener(Next);
         TownBtn.onClick.AddListener(Town);
 
-        //StartInterview();
+        StartInterview();
     }
 
     // Update is called once per frame
@@ -82,7 +82,7 @@ public class InterviewMgr : MonoBehaviour
         questionCount = 0;
         string spriteURL = gameDatabase.Applicants.applicants[Index].image_url;
         if (spriteURL != null)
-            applicantImage.sprite = Resources.Load<Sprite>("Images/" + spriteURL);
+            applicantImage.sprite = Resources.Load<Sprite>("Sprites/" + spriteURL);
     }
     void Approach()
     {
@@ -96,12 +96,12 @@ public class InterviewMgr : MonoBehaviour
             return;     // �ִ� ���� ���� �ʰ��� ��� ����
 
         questionCount++;
-        AddLog(catName, "�ٰ�����");
+        AddLog(catName, "다가간다");
         AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_approach);
 
-        ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex1));
+       /* ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex1));
         ExActPanel.transform.Find("Ex2Button").GetComponent<Button>().onClick.AddListener(() => AddLog(gameDatabase.Applicants.applicants[Index].reaction_approach_ex2));
-        ExActPanel.SetActive(true);
+        ExActPanel.SetActive(true);*/
         
     }
 
@@ -117,7 +117,7 @@ public class InterviewMgr : MonoBehaviour
             return;     // �ִ� ���� ���� �ʰ��� ��� ����
 
         questionCount++;
-        AddLog(catName,"�������");
+        AddLog(catName,"노려본다");
         AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_stare);
     }
 
@@ -133,24 +133,24 @@ public class InterviewMgr : MonoBehaviour
             return;     // �ִ� ���� ���� �ʰ��� ��� ����
 
         questionCount++;
-        AddLog(catName, "���� �ô´�");
+        AddLog(catName, "냄새 맡는다");
         AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_smell);
     }
 
-    void Ignore()
+    void Threat()
     {
         //
-        if (hasIgnored)
+        if (hasThreatened)
             return;     // �̹� ������ ��� ����
 
-        hasIgnored = true;
+        hasThreatened = true;
 
         if (questionCount >= maxQuestionCount)
             return;     // �ִ� ���� ���� �ʰ��� ��� ����
 
         questionCount++;
-        AddLog(catName, "�����Ѵ�");
-        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_ignore);
+        AddLog(catName, "위협한다");
+        AddLog(gameDatabase.Applicants.applicants[Index].name, gameDatabase.Applicants.applicants[Index].reaction_threat);
     }
 
     void Decide()
