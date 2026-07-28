@@ -14,7 +14,7 @@ public class CatHome : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        servantId = 1; // �ӽ÷� 1(������)�� ����, �����δ� ���� ���¿� ���� �ٸ��� ������ �� ���� 
+        servantId = 0; // �ӽ÷� 1(������)�� ����, �����δ� ���� ���¿� ���� �ٸ��� ������ �� ���� 
     }
 
     // Update is called once per frame

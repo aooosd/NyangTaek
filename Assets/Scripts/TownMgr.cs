@@ -127,14 +127,23 @@ public class TownMgr : MonoBehaviour
     void FillList<T>(List<T> list, Transform content, GameObject listItemPrefab)
         where T : IData
     {
-        Debug.Log(content.name);
+        int i = 0;
         foreach (var obj in list)
         {
             GameObject item = Instantiate(listItemPrefab, content);
             item.transform.Find("Button/Name").GetComponent<Text>().text = obj.GetName();
-            //item.transform.Find("Image").GetComponent<Image>().sprite = obj.GetImage();
+            if (obj is CatData)
+            {
+                item.transform.Find("Image").GetComponent<Image>().sprite = spritesCats[GameState.Instance.ownedCatIds[i]-1];
+            }
+            else if (obj is ApplicantData)
+            { 
+                item.transform.Find("Image").GetComponent<Image>().sprite = spritesApplicants[GameState.Instance.ownedApplicantIds[i]-1];
+            }
             //item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + obj.stability;
             Debug.Log("Added item: " + obj.GetName());
+
+            i++;
         }
     }
 

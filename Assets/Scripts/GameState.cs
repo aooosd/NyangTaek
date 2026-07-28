@@ -29,6 +29,15 @@ public class GameState : Singleton<GameState>
 
         //ownedApplicantIds.Add(1); 
         ownedApplicantIds.Add(2);
+        RefreshOwnedList();
+        Debug.Log("Owned Cats: " + ownedCats.Count);
+    }
+
+    public void RefreshOwnedList()
+    {         
+        ownedCats.Clear();
+        ownedItems.Clear();
+        ownedApplicants.Clear();
         foreach (int catId in ownedCatIds)
         {
             CatData cat = GameDatabase.Instance.Cats.cats.Find(c => c.id == catId);
@@ -37,15 +46,21 @@ public class GameState : Singleton<GameState>
                 ownedCats.Add(cat);
             }
         }
+        /*foreach (int itemId in ownedItemIds)
+        {
+            ItemData item = GameDatabase.Instance.Items.items.Find(i => i.id == itemId);
+            if (item != null)
+            {
+                ownedItems.Add(item);
+            }
+        }*/
         foreach (int applicantId in ownedApplicantIds)
         {
             ApplicantData applicant = GameDatabase.Instance.Applicants.applicants.Find(a => a.id == applicantId);
-            
             if (applicant != null)
             {
                 ownedApplicants.Add(applicant);
             }
         }
-        Debug.Log("Owned Cats: " + ownedCats.Count);
     }
 }

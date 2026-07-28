@@ -78,7 +78,7 @@ public class InterviewMgr : MonoBehaviour
         questionCount = 0;
         string spriteURL = GameDatabase.Instance.Applicants.applicants[Index].image_url;
         if (spriteURL != null)
-            applicantImage.sprite = Resources.Load<Sprite>("Sprites/" + spriteURL);
+            applicantImage.sprite = Resources.Load<Sprite>("Sprites/Applicants/" + spriteURL);
     }
     void Approach()
     {
@@ -170,6 +170,7 @@ public class InterviewMgr : MonoBehaviour
 
         GanteakPanel.SetActive(false);
         ResultPanel.SetActive(true);
+        GameState.Instance.RefreshOwnedList();
     }
 
     /*void Next()
