@@ -36,14 +36,14 @@ public class TownMgr : MonoBehaviour
 
     [Header("Cat Sprites")]
     public Image imageCat;
-    public Sprite[] spritesCats;
+    Sprite[] spritesCats;
 
     public Button buttonRagdollCat;
     public Button buttonCheeseCat;
     public Button buttonFishCat;
 
     [Header("Applicant Sprites")]
-    public Sprite[] spritesApplicants;
+    Sprite[] spritesApplicants;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -55,6 +55,9 @@ public class TownMgr : MonoBehaviour
         CatListBtn.onClick.AddListener(ShowCatList);
         FurnitureListBtn.onClick.AddListener(ShowItemList);
         OwnerListBtn.onClick.AddListener(ShowOwnerList);
+
+        spritesCats = SpriteLoader.Instance.LoadCatSprites();
+        spritesApplicants = SpriteLoader.Instance.LoadApplicantSprites();
     }
 
     void Start()
