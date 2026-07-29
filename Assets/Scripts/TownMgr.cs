@@ -89,7 +89,7 @@ public class TownMgr : MonoBehaviour
     
     void OnInterviewBtnClick()
     {
-        SceneManager.LoadScene("InterviewScene");
+        //SceneManager.LoadScene("InterviewScene");
     }
 
     public void ShowCatList()

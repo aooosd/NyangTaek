@@ -9,7 +9,7 @@ public class CatHome : MonoBehaviour
     public int servantId; // ���� ���õ� �������� ID (���� �� Ž����)
 
     public TextMeshProUGUI servantNameText; // �ӽ� UI �ؽ�Ʈ, ���� ���ӿ����� �ٸ� UI ��ҷ� ��ü�� �� ����
-
+    public TextMeshProUGUI comfortText;
     public Image imageCat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,5 +24,7 @@ public class CatHome : MonoBehaviour
         {
             servantNameText.text = "현재 집사\n" + GameState.Instance.ownedApplicants[servantId].GetName();
         }
+
+
     }
 }
