@@ -8,13 +8,17 @@ public class CatHome : MonoBehaviour
     ApplicantData currentApplicant; // ���� ���õ� ����
     public int servantId; // ���� ���õ� �������� ID (���� �� Ž����)
 
+    public Button servantButton;
+    public GameObject servantSelectPanel;
+
     public TextMeshProUGUI servantNameText; // �ӽ� UI �ؽ�Ʈ, ���� ���ӿ����� �ٸ� UI ��ҷ� ��ü�� �� ����
-    public TextMeshProUGUI comfortText;
+    public TextMeshProUGUI satisficationText;
     public Image imageCat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        servantId = 0; // �ӽ÷� 1(������)�� ����, �����δ� ���� ���¿� ���� �ٸ��� ������ �� ���� 
+        servantId = 0; //
+        servantButton.onClick.AddListener(OnServantButtonClicked);
     }
 
     // Update is called once per frame
@@ -26,5 +30,10 @@ public class CatHome : MonoBehaviour
         }
 
 
+    }
+
+    void OnServantButtonClicked()
+    {
+        servantSelectPanel.SetActive(true);
     }
 }

@@ -84,8 +84,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8391763221750245955}
+  - component: {fileID: 782907663445991150}
   m_Layer: 5
-  m_Name: SquareListItem
+  m_Name: ItemCell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,6 +113,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &782907663445991150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6290483170075809378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f861e6a4c96ba24a8a44f590ae23f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CellItem
 --- !u!1 &8269077835517075431
 GameObject:
   m_ObjectHideFlags: 0
