@@ -5,15 +5,10 @@ using UnityEngine.UI;
 
 public class UIMgr : Singleton<UIMgr>
 {
-    private Sprite[] spritesCats;
-    private Sprite[] spritesApplicants;
-
-
     protected override void Awake()
     {
         base.Awake();
-        spritesApplicants = SpriteLoader.Instance.LoadApplicantSprites();
-        spritesCats = SpriteLoader.Instance.LoadCatSprites();
+        
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,7 +22,7 @@ public class UIMgr : Singleton<UIMgr>
         
     }
 
-    void RefreshList<T>(List<T> list, Transform content, GameObject cellPrefab)
+    public void RefreshList<T>(List<T> list, Transform content, GameObject cellPrefab)
         where T : IData
     {
         DeleteList(content);
@@ -43,11 +38,11 @@ public class UIMgr : Singleton<UIMgr>
             GameObject cell = Instantiate(cellPrefab, content);
             if (obj is CatData)
             {
-                cell.GetComponent<Cell>().Initialize(spritesCats[GameState.Instance.ownedCatIds[i] - 1], obj.GetName());
+                cell.GetComponent<Cell>().Initialize(GameDatabase.Instance.spritesCats[GameState.Instance.ownedCatIds[i] - 1], obj.GetName());
             }
             else if (obj is ApplicantData)
             {
-                cell.GetComponent<Cell>().Initialize(spritesApplicants[GameState.Instance.ownedApplicantIds[i] - 1], obj.GetName());
+                cell.GetComponent<Cell>().Initialize(GameDatabase.Instance.spritesApplicants[GameState.Instance.ownedApplicantIds[i] - 1], obj.GetName());
             }
             else if (obj is ItemData)
             {

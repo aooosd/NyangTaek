@@ -36,4 +36,9 @@ public class CatHome : MonoBehaviour
     {
         servantSelectPanel.SetActive(true);
     }
+
+    public void Initialize(Sprite catSprite, string catName)
+    {
+        imageCat.sprite = catSprite;
+    }
 }

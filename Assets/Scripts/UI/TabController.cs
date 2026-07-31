@@ -6,7 +6,7 @@ public class TabController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        tabs = GetComponentsInChildren<TabButton>();
+        tabs = FindObjectsByType<TabButton>();
     }
 
     public void SwitchTab(TabButton btn)
