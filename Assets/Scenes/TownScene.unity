@@ -4877,6 +4877,7 @@ GameObject:
   - component: {fileID: 974854425}
   - component: {fileID: 974854424}
   - component: {fileID: 974854423}
+  - component: {fileID: 974854426}
   m_Layer: 5
   m_Name: ServantButton
   m_TagString: Untagged
@@ -4986,6 +4987,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974854421}
   m_CullTransparentMesh: 1
+--- !u!114 &974854426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974854421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af77cedb68bd96468e66d8b1a94e1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TabButton
+  panel: {fileID: 1723476365}
+  tabType: 5
 --- !u!1 &1015719369
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,6 +8193,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deed5c34b6a688f40b2a886f297a1a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabController
+  tabs:
+  - {fileID: 1474174677}
+  - {fileID: 2037032731}
+  - {fileID: 609157842}
+  - {fileID: 237480906}
+  - {fileID: 1643153727}
+  - {fileID: 167220017}
+  - {fileID: 1639601757}
+  - {fileID: 974854426}
 --- !u!4 &1574806250
 Transform:
   m_ObjectHideFlags: 0
