@@ -8,16 +8,17 @@ public class CatHome : MonoBehaviour
     ApplicantData currentApplicant; // ���� ���õ� ����
     public int servantId; // ���� ���õ� �������� ID (���� �� Ž����)
 
+    public Text catNameText;
     public Button servantButton;
     public GameObject servantSelectPanel;
 
     public TextMeshProUGUI servantNameText; // �ӽ� UI �ؽ�Ʈ, ���� ���ӿ����� �ٸ� UI ��ҷ� ��ü�� �� ����
-    public TextMeshProUGUI satisficationText;
+    //public TextMeshProUGUI satisficationText;
     public Image imageCat;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        servantId = 0; //
+        servantId = 2; //
         servantButton.onClick.AddListener(OnServantButtonClicked);
     }
 
@@ -26,7 +27,7 @@ public class CatHome : MonoBehaviour
     {
         if (servantId >= 0 && servantId < GameState.Instance.ownedApplicants.Count)
         {
-            servantNameText.text = "현재 집사\n" + GameState.Instance.ownedApplicants[servantId].GetName();
+            servantNameText.text = "현재 집사\n" + GameDatabase.Instance.Applicants.applicants[servantId - 1].GetName();
         }
 
 
@@ -37,8 +38,9 @@ public class CatHome : MonoBehaviour
         servantSelectPanel.SetActive(true);
     }
 
-    public void Initialize(Sprite catSprite, string catName)
+    public void Initialize(Sprite _catSprite, string _catName)
     {
-        imageCat.sprite = catSprite;
+        imageCat.sprite = _catSprite;
+        catNameText.text = _catName;
     }
 }

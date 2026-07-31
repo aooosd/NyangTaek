@@ -11,18 +11,19 @@ public class TabController : MonoBehaviour
 
     public void SwitchTab(TabButton btn)
     {
-        for (int i = 0; i < tabs.Length; i++)
+        for (int i = 0; i < tabs.Length; i++) // ¸ðµç ÅÇÀ» Å½»ö
         {
-            tabs[i].panel.SetActive(btn == tabs[i]);
+            tabs[i].panel.SetActive(false);    // ÅÇÀÇ ÆÐ³ÎÀ» ÇÏ³ªÇÏ³ª¾¿ ²ö´Ù.
+        }
 
-            /*if (btn == tabs[i])
+        for (int i = 0; i < tabs.Length; i++) // ¸ðµç ÅÇÀ» Å½»ö
+        {
+            if (btn == tabs[i])
             {
-                btn.panel.SetActive(true);
+                tabs[i].panel.SetActive(true);  // ¹öÆ°¿¡ ÇØ´çÇÏ´Â ÅÇ¸¸ ÄÒ´Ù.
+                break;                          // ¿øÇÏ´Â ÅÇÀ» Ã£¾ÒÀ¸´Ï Å»Ãâ
             }
-            else
-            {
-                tabs[i].panel.SetActive(false);
-            }*/
+                
         }
     }
 }

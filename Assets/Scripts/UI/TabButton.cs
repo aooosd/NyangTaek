@@ -19,17 +19,17 @@ public class TabButton : MonoBehaviour
 
     public GameObject panel;
 
-    TabController parent;
+    TabController tabController;
     public TabType tabType;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        parent = GetComponentInParent<TabController>();
+        tabController = FindAnyObjectByType<TabController>();
         gameObject.GetComponent<Button>().onClick.AddListener(SwitchTab);
     }
 
     void SwitchTab()
     {
-        parent.SwitchTab(this);
+        tabController.SwitchTab(this);
     }
 }

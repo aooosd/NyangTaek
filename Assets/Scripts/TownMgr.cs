@@ -66,22 +66,19 @@ public class TownMgr : MonoBehaviour
     void OnClickFishCat()
     {
         TownMain.SetActive(false);
-        catHome.gameObject.SetActive(true);
-        catHome.imageCat.sprite = spritesCats[0];
+        catHome.Initialize(GameDatabase.Instance.spritesCats[0], GameDatabase.Instance.Cats.cats[0].name);
     }
     
     void OnClickCheeseCat()
     {
         TownMain.SetActive(false);
-        catHome.gameObject.SetActive(true);
-        catHome.imageCat.sprite = spritesCats[1];
+        catHome.Initialize(GameDatabase.Instance.spritesCats[1], GameDatabase.Instance.Cats.cats[1].name);
     }
     
     void OnClickRagdollCat()
     {
         TownMain.SetActive(false);
-        catHome.gameObject.SetActive(true);
-        catHome.imageCat.sprite = spritesCats[2];
+        catHome.Initialize(GameDatabase.Instance.spritesCats[2], GameDatabase.Instance.Cats.cats[2].name);
     }
     
     void OnInterviewBtnClick()

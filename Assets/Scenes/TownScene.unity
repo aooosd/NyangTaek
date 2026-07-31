@@ -988,6 +988,7 @@ GameObject:
   - component: {fileID: 167220016}
   - component: {fileID: 167220015}
   - component: {fileID: 167220014}
+  - component: {fileID: 167220017}
   m_Layer: 5
   m_Name: Button_CheeseCat
   m_TagString: Untagged
@@ -1097,6 +1098,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167220012}
   m_CullTransparentMesh: 1
+--- !u!114 &167220017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167220012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af77cedb68bd96468e66d8b1a94e1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TabButton
+  panel: {fileID: 410596028}
+  tabType: 4
 --- !u!1 &178258233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,6 +1787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabButton
   panel: {fileID: 1020694504}
+  tabType: 0
 --- !u!1 &273121720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,10 +2418,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatHome
   servantId: 0
+  catNameText: {fileID: 1167544690}
   servantButton: {fileID: 974854423}
   servantSelectPanel: {fileID: 1723476365}
   servantNameText: {fileID: 1429450342}
-  satisficationText: {fileID: 0}
   imageCat: {fileID: 1933843001}
 --- !u!1 &456351899
 GameObject:
@@ -3709,6 +3725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabButton
   panel: {fileID: 1896957227}
+  tabType: 0
 --- !u!1 &612178773
 GameObject:
   m_ObjectHideFlags: 0
@@ -7436,6 +7453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabButton
   panel: {fileID: 1652182986}
+  tabType: 0
 --- !u!1 &1486967460
 GameObject:
   m_ObjectHideFlags: 0
@@ -8131,6 +8149,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!1 &1574806248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574806250}
+  - component: {fileID: 1574806249}
+  m_Layer: 0
+  m_Name: TabController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1574806249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574806248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deed5c34b6a688f40b2a886f297a1a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TabController
+--- !u!4 &1574806250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574806248}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587730410
 GameObject:
   m_ObjectHideFlags: 0
@@ -8312,6 +8374,7 @@ GameObject:
   - component: {fileID: 1639601756}
   - component: {fileID: 1639601755}
   - component: {fileID: 1639601754}
+  - component: {fileID: 1639601757}
   m_Layer: 5
   m_Name: Button_RagdollCat
   m_TagString: Untagged
@@ -8421,6 +8484,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639601752}
   m_CullTransparentMesh: 1
+--- !u!114 &1639601757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639601752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af77cedb68bd96468e66d8b1a94e1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TabButton
+  panel: {fileID: 410596028}
+  tabType: 4
 --- !u!1 &1643153722
 GameObject:
   m_ObjectHideFlags: 0
@@ -8433,6 +8510,7 @@ GameObject:
   - component: {fileID: 1643153726}
   - component: {fileID: 1643153725}
   - component: {fileID: 1643153724}
+  - component: {fileID: 1643153727}
   m_Layer: 5
   m_Name: Button_FishCat
   m_TagString: Untagged
@@ -8542,6 +8620,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1643153722}
   m_CullTransparentMesh: 1
+--- !u!114 &1643153727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643153722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af77cedb68bd96468e66d8b1a94e1fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TabButton
+  panel: {fileID: 410596028}
+  tabType: 4
 --- !u!1 &1646266873
 GameObject:
   m_ObjectHideFlags: 0
@@ -9212,7 +9304,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778379440}
-  - component: {fileID: 1778379441}
   m_Layer: 5
   m_Name: Down
   m_TagString: Untagged
@@ -9243,18 +9334,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 960}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1778379441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778379439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deed5c34b6a688f40b2a886f297a1a39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TabController
 --- !u!1 &1792877251
 GameObject:
   m_ObjectHideFlags: 0
@@ -10407,6 +10486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TabButton
   panel: {fileID: 1646266873}
+  tabType: 0
 --- !u!1 &2112935769
 GameObject:
   m_ObjectHideFlags: 0
@@ -10743,3 +10823,4 @@ SceneRoots:
   - {fileID: 394032436}
   - {fileID: 576855604}
   - {fileID: 668153233}
+  - {fileID: 1574806250}
