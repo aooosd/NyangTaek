@@ -6,26 +6,29 @@ using TMPro;
 public class ResumeView : MonoBehaviour
 {
     private ResumeModel resumeModel;
-    
-    //
-    public TextMeshProUGUI nameText;
-    public TextMeshProUGUI jobText;
-    public TextMeshProUGUI ageText;
 
-    public TextMeshProUGUI hashtagText_0;
-    public TextMeshProUGUI hashtagText_1;
-    public TextMeshProUGUI hashtagText_2;
-    
-    public TextMeshProUGUI prosText;
-    public TextMeshProUGUI consText;
-    public TextMeshProUGUI featuresText_0;
-    public TextMeshProUGUI featuresText_1;
-    public TextMeshProUGUI featuresText_2;
+    //
+    [SerializeField] Image applicantImage;
+    [SerializeField] TextMeshProUGUI nameText;
+    [SerializeField] TextMeshProUGUI jobText;
+    [SerializeField] TextMeshProUGUI ageText;
+
+    [SerializeField] TextMeshProUGUI hashtagText_0;
+    [SerializeField] TextMeshProUGUI hashtagText_1;
+    [SerializeField] TextMeshProUGUI hashtagText_2;
+
+    [SerializeField] TextMeshProUGUI prosText;
+    [SerializeField] TextMeshProUGUI consText;
+    [SerializeField] TextMeshProUGUI featuresText_0;
+    [SerializeField] TextMeshProUGUI featuresText_1;
+    [SerializeField] TextMeshProUGUI featuresText_2;
+
+    public Button interviewButton;
+    public Button cancelButton;
 
     private void Awake()
     {
         resumeModel = GetComponent<ResumeModel>();
-        
     }
 
     void Start()
@@ -40,13 +43,15 @@ public class ResumeView : MonoBehaviour
         // TODO: 기획팀에게 초기화할 stat 알려달라고 해주세요.
         //data.Initialize(3, 5, 4);
 
-        nameText.text = data.name;
-        jobText.text = data.job;
-        ageText.text = data.age.ToString();
+        applicantImage.sprite = GameDatabase.Instance.spritesApplicants[resumeModel.index];
 
-        hashtagText_0.text = "#" + data.ConvertToHashTag(StatType.activity);
-        hashtagText_1.text = "#" + data.ConvertToHashTag(StatType.independence);
-        hashtagText_2.text = "#" + data.ConvertToHashTag(StatType.closeness);
+        nameText.text = "이름 : " + data.name;
+        jobText.text = "직업 : " + data.job;
+        ageText.text = "나이 : " + data.age.ToString();
+
+        //hashtagText_0.text = "#" + data.ConvertToHashTag(StatType.activity);
+        //hashtagText_1.text = "#" + data.ConvertToHashTag(StatType.independence);
+        //hashtagText_2.text = "#" + data.ConvertToHashTag(StatType.closeness);
 
         prosText.text = data.pros;
         consText.text = data.cons;

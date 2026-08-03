@@ -10,6 +10,8 @@ public class GameState : Singleton<GameState>
     public List<int> ownedCatIds = new List<int>();
     public List<int> ownedItemIds = new List<int>();
     public List<int> ownedApplicantIds = new List<int>();
+
+    public int interviewIndex = 0;
     public int coin = 0;
 
     protected override void Awake()
@@ -27,8 +29,8 @@ public class GameState : Singleton<GameState>
         ownedCatIds.Add(2);
         ownedCatIds.Add(3);
 
-        //ownedApplicantIds.Add(1); 
-        ownedApplicantIds.Add(2);
+        ownedApplicantIds.Add(1); 
+        //ownedApplicantIds.Add(2);
         RefreshOwnedList();
         Debug.Log("Owned Cats: " + ownedCats.Count);
     }

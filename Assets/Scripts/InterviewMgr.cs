@@ -50,7 +50,7 @@ public class InterviewMgr : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Index = 0; // ���� ���� ���� �ִ� �������� �ε���
+        Index = GameState.Instance.interviewIndex; // ���� ���� ���� �ִ� �������� �ε���
         ApproachBtn.onClick.AddListener(Approach);
         StareBtn.onClick.AddListener(Stare);
         SmellBtn.onClick.AddListener(Smell);
@@ -76,9 +76,10 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         questionCount = 0;
-        string spriteURL = GameDatabase.Instance.Applicants.applicants[Index].image_url;
+        applicantImage.sprite = GameDatabase.Instance.spritesApplicants[Index];
+        /*string spriteURL = GameDatabase.Instance.Applicants.applicants[Index].image_url;
         if (spriteURL != null)
-            applicantImage.sprite = Resources.Load<Sprite>("Sprites/Applicants/" + spriteURL);
+            applicantImage.sprite = Resources.Load<Sprite>("Sprites/Applicants/" + spriteURL);*/
     }
     void Approach()
     {
