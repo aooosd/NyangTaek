@@ -19,7 +19,6 @@ public class CatHome : MonoBehaviour
     void Start()
     {
         servantId = 2; //
-        servantButton.onClick.AddListener(OnServantButtonClicked);
     }
 
     // Update is called once per frame
@@ -31,11 +30,6 @@ public class CatHome : MonoBehaviour
         }
 
 
-    }
-
-    void OnServantButtonClicked()
-    {
-        servantSelectPanel.SetActive(true);
     }
 
     public void Initialize(Sprite _catSprite, string _catName)

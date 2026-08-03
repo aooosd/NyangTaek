@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class TabController : MonoBehaviour
 {
-    TabButton[] tabs;
+    public TabButton[] tabs;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        tabs = FindObjectsByType<TabButton>();
+        //tabs = FindObjectsByType<TabButton>();
     }
 
     public void SwitchTab(TabButton btn)
