@@ -10,17 +10,7 @@ public class UIMgr : Singleton<UIMgr>
         base.Awake();
         
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 
     public void RefreshList<T>(List<T> list, Transform content, GameObject cellPrefab)
         where T : IData
@@ -49,7 +39,6 @@ public class UIMgr : Singleton<UIMgr>
 
             }
 
-            //item.transform.Find("Stability").GetComponent<Text>().text = "Stability: " + obj.stability;
             Debug.Log("Added item: " + obj.GetName());
 
             i++;

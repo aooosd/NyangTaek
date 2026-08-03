@@ -9,8 +9,8 @@ public class Cell : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected virtual void Awake()
     {
-        button = GetComponent<Button>();
-        cellImage = GetComponent<Image>();
+        button = GetComponentInChildren<Button>();
+        cellImage = transform.Find("Image").GetComponent<Image>();
         nameText = GetComponentInChildren<Text>();
         button.onClick.AddListener(OnCellClicked);
     }
