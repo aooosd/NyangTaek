@@ -49,6 +49,11 @@ public class MemoSlideBar : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         float maxX = boxRect.rect.width * 0.5f - halfBarWidth;
 
         float x = Mathf.Clamp(localPoint.x, minX, maxX);
+        /*x = (int)(x + 300) / (int)(boxRect.rect.width * 0.2f);
+        x = x * (boxRect.rect.width * 0.2f) - (boxRect.rect.width * 0.4f);*/
+        //x = x - x % (boxRect.rect.width * 0.2f);
+        x = Mathf.Round(x / (boxRect.rect.width * 0.2f)) * (boxRect.rect.width * 0.2f);
+
 
         slideBar.anchoredPosition = new Vector2(
             x,
