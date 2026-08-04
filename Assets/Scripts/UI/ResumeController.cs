@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,12 @@ public class ResumeController : MonoBehaviour
 
         resumeView.interviewButton.onClick.AddListener(OnInterviewButtonClicked);
         resumeView.cancelButton.onClick.AddListener(OnCancelButtonClicked);
+
+        if (gameObject.name.Contains("ResumePanel_OnInterview"))
+        {
+            resumeView.cancelButton.GetComponentInChildren<TextMeshProUGUI>().text = "면접으로";
+            resumeView.interviewButton.gameObject.SetActive(false);
+        }
     }
 
     void OnInterviewButtonClicked()

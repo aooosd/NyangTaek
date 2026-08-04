@@ -38,7 +38,7 @@ public class InterviewMgr : MonoBehaviour
     public GameObject textPrefab;
 
     public GameObject memoPanel;
-    public GameObject documentPanel;
+    public GameObject resumePanel;
 
     string catName = "고양이";
 
@@ -221,11 +221,11 @@ public class InterviewMgr : MonoBehaviour
 
     public void ShowDocument()
     {
-        documentPanel.SetActive(true);
+        resumePanel.SetActive(true);
     }
 
     public void HideDocument()
     {
-        documentPanel.SetActive(false);
+        resumePanel.SetActive(false);
     }
 }
