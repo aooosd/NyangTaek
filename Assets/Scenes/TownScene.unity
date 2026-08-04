@@ -2424,6 +2424,7 @@ MonoBehaviour:
   servantButton: {fileID: 974854423}
   servantSelectPanel: {fileID: 1723476365}
   servantNameText: {fileID: 1429450342}
+  satisfactionText: {fileID: 593916261}
   imageCat: {fileID: 1933843001}
 --- !u!1 &456351899
 GameObject:

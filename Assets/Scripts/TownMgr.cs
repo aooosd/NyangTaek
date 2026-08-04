@@ -44,34 +44,34 @@ public class TownMgr : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        buttonFishCat.onClick.AddListener(OnClickFishCat);
-        buttonCheeseCat.onClick.AddListener(OnClickCheeseCat);
-        buttonRagdollCat.onClick.AddListener(OnClickRagdollCat);
+        
         InterviewBtn.onClick.AddListener(OnInterviewBtnClick);
     }
 
     void Start()
     {
         Debug.Log("start");
-        
+        buttonFishCat.onClick.AddListener(OnClickFishCat);
+        buttonCheeseCat.onClick.AddListener(OnClickCheeseCat);
+        buttonRagdollCat.onClick.AddListener(OnClickRagdollCat);
     }
 
     void OnClickFishCat()
     {
         TownMain.SetActive(false);
-        catHome.Initialize(GameDatabase.Instance.spritesCats[0], GameDatabase.Instance.Cats.cats[0].name);
+        catHome.SetId(1);
     }
     
     void OnClickCheeseCat()
     {
         TownMain.SetActive(false);
-        catHome.Initialize(GameDatabase.Instance.spritesCats[1], GameDatabase.Instance.Cats.cats[1].name);
+        catHome.SetId(2);
     }
     
     void OnClickRagdollCat()
     {
         TownMain.SetActive(false);
-        catHome.Initialize(GameDatabase.Instance.spritesCats[2], GameDatabase.Instance.Cats.cats[2].name);
+        catHome.SetId(3);
     }
     
     void OnInterviewBtnClick()
