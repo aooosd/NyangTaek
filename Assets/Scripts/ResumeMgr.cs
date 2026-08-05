@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+/// <summary>기존 이력서 화면 로직을 보관하는 임시 호환용 컴포넌트입니다.</summary>
 public class ResumeMgr : MonoBehaviour
 {
     /*[Header("Resume Info")]
@@ -30,7 +31,7 @@ public class ResumeMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void StartInterview()

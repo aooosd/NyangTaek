@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/// <summary>전역 값 관리 기능을 확장하기 위해 남겨 둔 MonoBehaviour입니다.</summary>
 public class GlobalValue : MonoBehaviour
 {
     //public static int interviewIndex = 0;
