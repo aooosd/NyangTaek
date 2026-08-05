@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 스크롤뷰의 리스트를 갱신한다.
+/// </summary>
 public class UIMgr : Singleton<UIMgr>
 {
     protected override void Awake()
