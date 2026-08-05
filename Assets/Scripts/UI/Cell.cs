@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 스크롤 되는 아이템 하나를 의미한다.
+/// </summary>
 public class Cell : MonoBehaviour
 {
     Button button;
     Image cellImage;
     Text nameText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     protected virtual void Awake()
     {
         button = GetComponentInChildren<Button>();

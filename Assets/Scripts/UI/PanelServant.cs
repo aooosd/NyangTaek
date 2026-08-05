@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 스크롤뷰에 집사들 업데이트(갱신)
+/// </summary>
 public class PanelServant : MonoBehaviour
 {
     Text titleText;

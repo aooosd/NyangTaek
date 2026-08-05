@@ -1,5 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
+
+/// <summary>
+/// 스크롤뷰에 고양이 업데이트(갱신)
+/// </summary>
 public class PanelCat : MonoBehaviour
 {
     Text titleText;
