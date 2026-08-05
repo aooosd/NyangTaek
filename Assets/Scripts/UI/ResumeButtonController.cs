@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>지원자 선택 버튼과 이력서 패널을 연결합니다.</summary>
@@ -23,4 +23,9 @@ public class ResumeButtonController : MonoBehaviour
         
         resumePanel.GetComponent<ResumeView>().Initialize();
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes

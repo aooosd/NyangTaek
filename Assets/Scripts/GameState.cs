@@ -70,3 +70,4 @@ public class GameState : Singleton<GameState>
         }
     }
 }
+

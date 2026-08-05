@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>Resources 폴더의 JSON 파일을 지정한 데이터 형식으로 변환합니다.</summary>
 public static class JsonLoader

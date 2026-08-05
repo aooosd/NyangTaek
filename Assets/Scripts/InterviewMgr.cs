@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +12,7 @@ public class InterviewMgr : MonoBehaviour
     int maxQuestionCount = 3;   // 한 번의 면접에서 실행할 수 있는 최대 행동 수입니다.
 
     [Header("Interview")]
+<<<<<<< Updated upstream
     public Button ApproachBtn; // 다가가기 행동 버튼입니다.
     public Button StareBtn;    // 노려보기 행동 버튼입니다.
     public Button SmellBtn;    // 냄새 맡기 행동 버튼입니다.
@@ -21,6 +22,18 @@ public class InterviewMgr : MonoBehaviour
     public Button RejectBtn;   // 지원자를 거절하는 버튼입니다.
 
     public GameObject ExActPanel; // 추가 행동을 표시할 패널입니다.
+=======
+    // 占썩본 占썅동 占쏙옙튼占쏙옙
+    public Button ApproachBtn;
+    public Button StareBtn;
+    public Button SmellBtn;
+    public Button IgnoreBtn;
+    public Button DecideBtn;
+    public Button AcceptBtn;
+    public Button RejectBtn;
+
+    public GameObject ExActPanel; // 占쌩곤옙 占썅동 占싻놂옙
+>>>>>>> Stashed changes
 
     public Text CountText; // 남은 행동 횟수를 표시합니다.
 
@@ -40,7 +53,11 @@ public class InterviewMgr : MonoBehaviour
     public GameObject memoPanel;   // 면접 메모를 표시하는 패널입니다.
     public GameObject resumePanel; // 지원자 이력서를 표시하는 패널입니다.
 
+<<<<<<< Updated upstream
     string catName = "고양이"; // 대화 로그에 표시할 고양이 화자 이름입니다.
+=======
+    string catName = "怨좎뼇??;
+>>>>>>> Stashed changes
 
     bool hasApproached = false; // 다가가기 행동을 이미 사용했는지 나타냅니다.
     bool hasStared = false;     // 노려보기 행동을 이미 사용했는지 나타냅니다.
@@ -50,7 +67,7 @@ public class InterviewMgr : MonoBehaviour
     /// <summary>현재 면접 대상을 가져오고 버튼 이벤트를 연결한 뒤 면접을 시작합니다.</summary>
     void Start()
     {
-        Index = GameState.Instance.interviewIndex; // ���� ���� ���� �ִ� �������� �ε���
+        Index = GameState.Instance.interviewIndex; // 占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占쌍댐옙 占쏙옙占쏙옙占쏙옙占쏙옙 占싸듸옙占쏙옙
         ApproachBtn.onClick.AddListener(Approach);
         StareBtn.onClick.AddListener(Stare);
         SmellBtn.onClick.AddListener(Smell);
@@ -87,15 +104,15 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasApproached)
-            return;     // �̹� �ٰ��� ��� ����
+            return;     // 占싱뱄옙 占쌕곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         hasApproached = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // �ִ� ���� ���� �ʰ��� ��� ����
+            return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         questionCount++;
-        AddLog(catName, "다가간다");
+        AddLog(catName, "?ㅺ?媛꾨떎");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_approach);
 
        /* ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(GameDatabase.Instance.Applicants.applicants[Index].reaction_approach_ex1));
@@ -109,15 +126,15 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasStared)
-            return;     // �̹� ����� ��� ����
+            return;     // 占싱뱄옙 占쏙옙占쏙옙占?占쏙옙占?占쏙옙占쏙옙
 
         hasStared = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // �ִ� ���� ���� �ʰ��� ��� ����
+            return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         questionCount++;
-        AddLog(catName,"노려본다");
+        AddLog(catName,"?몃젮蹂몃떎");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_stare);
     }
 
@@ -126,15 +143,15 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasSmelled)
-            return;     // �̹� ���� ���� ��� ����
+            return;     // 占싱뱄옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         hasSmelled = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // �ִ� ���� ���� �ʰ��� ��� ����
+            return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         questionCount++;
-        AddLog(catName, "냄새 맡는다");
+        AddLog(catName, "?꾩깉 留〓뒗??);
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_smell);
     }
 
@@ -143,15 +160,15 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasThreatened)
-            return;     // �̹� ������ ��� ����
+            return;     // 占싱뱄옙 占쏙옙占쏙옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         hasThreatened = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // �ִ� ���� ���� �ʰ��� ��� ����
+            return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         questionCount++;
-        AddLog(catName, "위협한다");
+        AddLog(catName, "?꾪삊?쒕떎");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_threat);
     }
 
@@ -168,13 +185,13 @@ public class InterviewMgr : MonoBehaviour
     {
         if (isPassed)
         {
-            ResultText.text = "간택했습니다!";
+            ResultText.text = "媛꾪깮?덉뒿?덈떎!";
             GameState.Instance.ownedApplicantIds.Add(GameDatabase.Instance.Applicants.applicants[Index].id);
         }
         else
         {
-            ResultText.text = "간택하지 않았습니다!";
-            GameState.Instance.ownedApplicantIds.Remove(GameDatabase.Instance.Applicants.applicants[Index].id);    // ���հ� ���� (1�� �հ�, 0�� ���հ�)
+            ResultText.text = "媛꾪깮?섏? ?딆븯?듬땲??";
+            GameState.Instance.ownedApplicantIds.Remove(GameDatabase.Instance.Applicants.applicants[Index].id);    // 占쏙옙占쌌곤옙 占쏙옙占쏙옙 (1占쏙옙 占쌌곤옙, 0占쏙옙 占쏙옙占쌌곤옙)
         }
 
         GanteakPanel.SetActive(false);
@@ -216,20 +233,20 @@ public class InterviewMgr : MonoBehaviour
     /// <summary>사용한 행동 수를 기준으로 남은 행동 횟수를 표시합니다.</summary>
     void ShowCount()
     {
-        CountText.text = "남은 행동\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
+        CountText.text = "?⑥? ?됰룞\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
     }
 
     /// <summary>면접 메모 패널을 표시합니다.</summary>
     public void ShowMemo()
     {
-        // �޸� �����ִ� �Լ�
+        // 占쌨몌옙 占쏙옙占쏙옙占쌍댐옙 占쌉쇽옙
         memoPanel.SetActive(true);
     }
 
     /// <summary>면접 메모 패널을 숨깁니다.</summary>
     public void HideMemo()
     {
-        // �޸� ����� �Լ�
+        // 占쌨몌옙 占쏙옙占쏙옙占?占쌉쇽옙
         memoPanel.SetActive(false);
     }
 
@@ -245,3 +262,4 @@ public class InterviewMgr : MonoBehaviour
         resumePanel.SetActive(false);
     }
 }
+

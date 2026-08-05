@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -22,5 +22,11 @@ public class CatData : IData
 /// <summary>JSON에서 불러온 고양이 데이터 목록을 보관합니다.</summary>
 public class CatDatabase
 {
+<<<<<<< Updated upstream
     public List<CatData> cats;  // 게임에 등록된 모든 고양이 데이터입니다.
 }
+=======
+    public List<CatData> cats;
+}
+
+>>>>>>> Stashed changes

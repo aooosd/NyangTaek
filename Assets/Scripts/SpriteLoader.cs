@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>Resources 폴더에서 게임에 필요한 스프라이트 묶음을 불러옵니다.</summary>
 public class SpriteLoader : Singleton<SpriteLoader>
@@ -20,4 +20,9 @@ public class SpriteLoader : Singleton<SpriteLoader>
 
         return sprites;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes

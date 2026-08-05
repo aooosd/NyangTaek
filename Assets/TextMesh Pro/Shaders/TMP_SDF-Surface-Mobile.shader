@@ -1,4 +1,4 @@
-// Simplified version of the SDF Surface shader :
+﻿// Simplified version of the SDF Surface shader :
 // - No support for Bevel, Bump or envmap
 // - Diffuse only lighting
 // - Fully supports only 1 directional light. Other lights can affect it, but it will be per-vertex/SH.
@@ -137,3 +137,4 @@ SubShader {
 
 CustomEditor "TMPro.EditorUtilities.TMP_SDFShaderGUI"
 }
+

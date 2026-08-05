@@ -1,4 +1,4 @@
-Shader "TextMeshPro/Distance Field" {
+﻿Shader "TextMeshPro/Distance Field" {
 
 Properties {
 	_FaceTex			("Face Texture", 2D) = "white" {}
@@ -324,3 +324,4 @@ SubShader {
 Fallback "TextMeshPro/Mobile/Distance Field"
 CustomEditor "TMPro.EditorUtilities.TMP_SDFShaderGUI"
 }
+

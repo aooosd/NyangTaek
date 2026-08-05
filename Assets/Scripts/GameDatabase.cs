@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>게임의 정적 JSON 데이터와 이미지 리소스를 한 번만 불러와 제공합니다.</summary>
 public class GameDatabase : Singleton<GameDatabase>
@@ -21,4 +21,9 @@ public class GameDatabase : Singleton<GameDatabase>
         Debug.Log("GameDatabase loaded successfully.");
     }
 
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes

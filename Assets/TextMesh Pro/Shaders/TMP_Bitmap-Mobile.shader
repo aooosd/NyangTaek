@@ -1,4 +1,4 @@
-Shader "TextMeshPro/Mobile/Bitmap" {
+﻿Shader "TextMeshPro/Mobile/Bitmap" {
 
 Properties {
 	_MainTex		    ("Font Atlas", 2D) = "white" {}
@@ -153,3 +153,4 @@ SubShader {
 
 CustomEditor "TMPro.EditorUtilities.TMP_BitmapShaderGUI"
 }
+

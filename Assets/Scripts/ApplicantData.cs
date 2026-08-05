@@ -182,3 +182,4 @@ public class ApplicantDatabase
 {
     public List<ApplicantData> applicants = new List<ApplicantData>(); // 게임에 등록된 지원자 데이터입니다.
 }
+

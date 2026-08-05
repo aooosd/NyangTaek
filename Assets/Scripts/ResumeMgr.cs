@@ -39,4 +39,9 @@ public class ResumeMgr : MonoBehaviour
         // ��ư Ŭ�� �� ���ͺ� ȭ������ �̵�
         SceneManager.LoadScene("InterviewScene");
     }*/
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes

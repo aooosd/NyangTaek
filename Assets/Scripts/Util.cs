@@ -30,4 +30,9 @@ public static class Util
             return Color.white;
         }
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes

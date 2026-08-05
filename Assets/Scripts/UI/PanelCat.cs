@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
@@ -23,4 +23,9 @@ public class PanelCat : MonoBehaviour
     {
         UIMgr.Instance.RefreshList(GameState.Instance.ownedCats, content, cellPrefab);
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes

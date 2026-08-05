@@ -1,4 +1,4 @@
-// Simplified SDF shader:
+﻿// Simplified SDF shader:
 // - No Shading Option (bevel / bump / env map)
 // - No Glow Option
 // - Softness is applied on both side of the outline
@@ -387,3 +387,4 @@ SubShader {
 
 CustomEditor "TMPro.EditorUtilities.TMP_SDFShaderGUI"
 }
+

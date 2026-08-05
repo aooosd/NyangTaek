@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 /// <summary>포인터 입력으로 메모 슬라이드 바를 정해진 단계 단위로 이동시킵니다.</summary>
@@ -67,3 +67,4 @@ public class MemoSlideBar : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         );
     }
 }
+

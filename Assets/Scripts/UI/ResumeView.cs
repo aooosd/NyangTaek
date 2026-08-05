@@ -64,3 +64,4 @@ public class ResumeView : MonoBehaviour
         featuresText_2.text = data.feature3;
     }
 }
+

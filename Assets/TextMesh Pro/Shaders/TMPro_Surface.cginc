@@ -1,4 +1,4 @@
-void VertShader(inout appdata_full v, out Input data)
+﻿void VertShader(inout appdata_full v, out Input data)
 {
 	v.vertex.x += _VertexOffsetX;
 	v.vertex.y += _VertexOffsetY;
@@ -97,3 +97,4 @@ void PixShader(Input input, inout SurfaceOutput o)
 	o.Gloss = 1;
 	o.Alpha = faceColor.a;
 }
+

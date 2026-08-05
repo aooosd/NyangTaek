@@ -13,4 +13,9 @@ public class ResumeModel : MonoBehaviour
         applicantData = GameDatabase.Instance.Applicants.applicants[index];
         //applicantData.Initialize(3, 3, 3);
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+
+>>>>>>> Stashed changes

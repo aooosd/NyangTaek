@@ -163,3 +163,4 @@ float4 PixShader(pixel_t input) : SV_Target
 
     return faceColor;
 }
+
