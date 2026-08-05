@@ -50,7 +50,7 @@ public class InterviewMgr : MonoBehaviour
     /// <summary>현재 면접 대상을 가져오고 버튼 이벤트를 연결한 뒤 면접을 시작합니다.</summary>
     void Start()
     {
-        Index = GameState.Instance.interviewIndex; // 占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占쌍댐옙 占쏙옙占쏙옙占쏙옙占쏙옙 占싸듸옙占쏙옙
+        Index = GameState.Instance.interviewIndex;
         ApproachBtn.onClick.AddListener(Approach);
         StareBtn.onClick.AddListener(Stare);
         SmellBtn.onClick.AddListener(Smell);
@@ -87,15 +87,15 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasApproached)
-            return;     // 占싱뱄옙 占쌕곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
+            return;
 
         hasApproached = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
+            return;
 
         questionCount++;
-        AddLog(catName, "?ㅺ?媛꾨떎");
+        AddLog(catName, "다가간다");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_approach);
 
        /* ExActPanel.transform.Find("Ex1Button").GetComponent<Button>().onClick.AddListener(() => AddLog(GameDatabase.Instance.Applicants.applicants[Index].reaction_approach_ex1));
@@ -117,7 +117,7 @@ public class InterviewMgr : MonoBehaviour
             return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         questionCount++;
-        AddLog(catName,"?몃젮蹂몃떎");
+        AddLog(catName,"노려본다");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_stare);
     }
 
@@ -126,15 +126,15 @@ public class InterviewMgr : MonoBehaviour
     {
         //
         if (hasSmelled)
-            return;     // 占싱뱄옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
+            return;
 
         hasSmelled = true;
 
         if (questionCount >= maxQuestionCount)
-            return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
+            return;
 
         questionCount++;
-        AddLog(catName, "?꾩깉 留〓뒗??");
+        AddLog(catName, "냄새 맡는다");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_smell);
     }
 
@@ -151,7 +151,7 @@ public class InterviewMgr : MonoBehaviour
             return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         questionCount++;
-        AddLog(catName, "?꾪삊?쒕떎");
+        AddLog(catName, "위협한다");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_threat);
     }
 
@@ -168,13 +168,13 @@ public class InterviewMgr : MonoBehaviour
     {
         if (isPassed)
         {
-            ResultText.text = "媛꾪깮?덉뒿?덈떎!";
+            ResultText.text = "간택했습니다!";
             GameState.Instance.ownedApplicantIds.Add(GameDatabase.Instance.Applicants.applicants[Index].id);
         }
         else
         {
-            ResultText.text = "媛꾪깮?섏? ?딆븯?듬땲??";
-            GameState.Instance.ownedApplicantIds.Remove(GameDatabase.Instance.Applicants.applicants[Index].id);    // 占쏙옙占쌌곤옙 占쏙옙占쏙옙 (1占쏙옙 占쌌곤옙, 0占쏙옙 占쏙옙占쌌곤옙)
+            ResultText.text = "간택하지 않았습니다!";
+            GameState.Instance.ownedApplicantIds.Remove(GameDatabase.Instance.Applicants.applicants[Index].id);
         }
 
         GanteakPanel.SetActive(false);
@@ -216,7 +216,7 @@ public class InterviewMgr : MonoBehaviour
     /// <summary>사용한 행동 수를 기준으로 남은 행동 횟수를 표시합니다.</summary>
     void ShowCount()
     {
-        CountText.text = "?⑥? ?됰룞\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
+        CountText.text = "남은 행동\n" + (maxQuestionCount - questionCount) + "/" + maxQuestionCount;
     }
 
     /// <summary>면접 메모 패널을 표시합니다.</summary>
