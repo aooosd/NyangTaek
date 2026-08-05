@@ -21,8 +21,8 @@ MonoBehaviour:
   m_OverrideGlobalSceneList: 1
   m_Scenes:
   - m_enabled: 1
-    m_path: Assets/Scenes/ResumeScene.unity
-    m_guid: e43ef5e85cdb97b4db3a8872b5c1bb12
+    m_path: Assets/Scenes/TownScene.unity
+    m_guid: fcf20c9609fe8a143b1d250bd8a7d7a2
   - m_enabled: 1
     m_path: Assets/Scenes/InterviewScene.unity
     m_guid: bc44fe84d8fcbe44d9a2fecec6ef580c
@@ -42,7 +42,7 @@ MonoBehaviour:
     - line: '|   useOnDemandResources: 0'
     - line: '|   accelerometerFrequency: 60'
     - line: '|   companyName: DefaultCompany'
-    - line: '|   productName: CatTheInterviewer'
+    - line: '|   productName: NyangTaek'
     - line: '|   defaultCursor: {instanceID: 0}'
     - line: '|   cursorHotspot: {x: 0, y: 0}'
     - line: '|   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b:

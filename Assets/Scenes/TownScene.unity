@@ -2419,6 +2419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0735de1d81463ad409a11300f8864ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatHome
+  catId: 0
   servantId: 0
   catNameText: {fileID: 1167544690}
   servantButton: {fileID: 974854423}
@@ -6144,11 +6145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8810068660219337306, guid: 1bb93f0a2cae09f40a9f77ceb2c2e600, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 453
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 8810068660219337306, guid: 1bb93f0a2cae09f40a9f77ceb2c2e600, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 489
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8810068660219337306, guid: 1bb93f0a2cae09f40a9f77ceb2c2e600, type: 3}
       propertyPath: m_AnchoredPosition.x
