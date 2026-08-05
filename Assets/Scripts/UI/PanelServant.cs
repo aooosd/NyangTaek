@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
@@ -23,9 +23,5 @@ public class PanelServant : MonoBehaviour
     {
         UIMgr.Instance.RefreshList(GameState.Instance.ownedApplicants, content, cellPrefab);
     }
-<<<<<<< Updated upstream
-}
-=======
 }
 
->>>>>>> Stashed changes

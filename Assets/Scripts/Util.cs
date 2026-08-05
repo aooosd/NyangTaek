@@ -1,4 +1,4 @@
-﻿using Unity.VisualScripting;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>색상 변환처럼 여러 클래스에서 재사용할 보조 기능을 제공합니다.</summary>
@@ -30,9 +30,5 @@ public static class Util
             return Color.white;
         }
     }
-<<<<<<< Updated upstream
-}
-=======
 }
 
->>>>>>> Stashed changes

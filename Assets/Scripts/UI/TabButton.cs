@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>특정 패널과 연결되어 TabController에 탭 전환을 요청하는 버튼입니다.</summary>
@@ -36,9 +36,5 @@ public class TabButton : MonoBehaviour
     {
         tabController.SwitchTab(this);
     }
-<<<<<<< Updated upstream
-}
-=======
 }
 
->>>>>>> Stashed changes

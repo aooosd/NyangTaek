@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 [System.Serializable]
 /// <summary>가구 한 개의 기본 정보를 저장합니다.</summary>
@@ -12,9 +12,4 @@ public class FurnitureData : IData
     {
         return name;
     }
-<<<<<<< Updated upstream
 }
-=======
-}
-
->>>>>>> Stashed changes

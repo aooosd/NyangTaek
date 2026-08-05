@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
@@ -14,9 +14,4 @@ public class CellShopItem : Cell
     {
         this.price = price;
     }
-<<<<<<< Updated upstream
 }
-=======
-}
-
->>>>>>> Stashed changes

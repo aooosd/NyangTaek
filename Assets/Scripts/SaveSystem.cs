@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 /// <summary>게임 저장과 불러오기 기능을 구현하기 위한 기본 컴포넌트입니다.</summary>
 public class SaveSystem : MonoBehaviour
@@ -14,9 +14,4 @@ public class SaveSystem : MonoBehaviour
     {
         
     }
-<<<<<<< Updated upstream
 }
-=======
-}
-
->>>>>>> Stashed changes

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
@@ -33,9 +33,5 @@ public class Cell : MonoBehaviour
         cellImage.sprite = sp;
         nameText.text = txt;
     }
-<<<<<<< Updated upstream
-}
-=======
 }
 
->>>>>>> Stashed changes

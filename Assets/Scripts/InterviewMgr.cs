@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using UnityEditor.Search;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,7 +12,6 @@ public class InterviewMgr : MonoBehaviour
     int maxQuestionCount = 3;   // 한 번의 면접에서 실행할 수 있는 최대 행동 수입니다.
 
     [Header("Interview")]
-<<<<<<< Updated upstream
     public Button ApproachBtn; // 다가가기 행동 버튼입니다.
     public Button StareBtn;    // 노려보기 행동 버튼입니다.
     public Button SmellBtn;    // 냄새 맡기 행동 버튼입니다.
@@ -22,18 +21,6 @@ public class InterviewMgr : MonoBehaviour
     public Button RejectBtn;   // 지원자를 거절하는 버튼입니다.
 
     public GameObject ExActPanel; // 추가 행동을 표시할 패널입니다.
-=======
-    // 占썩본 占썅동 占쏙옙튼占쏙옙
-    public Button ApproachBtn;
-    public Button StareBtn;
-    public Button SmellBtn;
-    public Button IgnoreBtn;
-    public Button DecideBtn;
-    public Button AcceptBtn;
-    public Button RejectBtn;
-
-    public GameObject ExActPanel; // 占쌩곤옙 占썅동 占싻놂옙
->>>>>>> Stashed changes
 
     public Text CountText; // 남은 행동 횟수를 표시합니다.
 
@@ -53,11 +40,7 @@ public class InterviewMgr : MonoBehaviour
     public GameObject memoPanel;   // 면접 메모를 표시하는 패널입니다.
     public GameObject resumePanel; // 지원자 이력서를 표시하는 패널입니다.
 
-<<<<<<< Updated upstream
     string catName = "고양이"; // 대화 로그에 표시할 고양이 화자 이름입니다.
-=======
-    string catName = "怨좎뼇??;
->>>>>>> Stashed changes
 
     bool hasApproached = false; // 다가가기 행동을 이미 사용했는지 나타냅니다.
     bool hasStared = false;     // 노려보기 행동을 이미 사용했는지 나타냅니다.
@@ -151,7 +134,7 @@ public class InterviewMgr : MonoBehaviour
             return;     // 占쌍댐옙 占쏙옙占쏙옙 占쏙옙占쏙옙 占십곤옙占쏙옙 占쏙옙占?占쏙옙占쏙옙
 
         questionCount++;
-        AddLog(catName, "?꾩깉 留〓뒗??);
+        AddLog(catName, "?꾩깉 留〓뒗??");
         AddLog(GameDatabase.Instance.Applicants.applicants[Index].name, GameDatabase.Instance.Applicants.applicants[Index].reaction_smell);
     }
 
@@ -239,14 +222,13 @@ public class InterviewMgr : MonoBehaviour
     /// <summary>면접 메모 패널을 표시합니다.</summary>
     public void ShowMemo()
     {
-        // 占쌨몌옙 占쏙옙占쏙옙占쌍댐옙 占쌉쇽옙
+        // 
         memoPanel.SetActive(true);
     }
 
     /// <summary>면접 메모 패널을 숨깁니다.</summary>
     public void HideMemo()
     {
-        // 占쌨몌옙 占쏙옙占쏙옙占?占쌉쇽옙
         memoPanel.SetActive(false);
     }
 

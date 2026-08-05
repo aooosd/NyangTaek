@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 /// <summary>등록된 탭 패널 가운데 선택된 패널 하나만 표시합니다.</summary>
 public class TabController : MonoBehaviour
@@ -30,9 +30,4 @@ public class TabController : MonoBehaviour
                 
         }
     }
-<<<<<<< Updated upstream
 }
-=======
-}
-
->>>>>>> Stashed changes

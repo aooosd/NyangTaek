@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 
 /// <summary>이력서 화면이 표시할 지원자 데이터와 선택 인덱스를 보관합니다.</summary>
@@ -13,9 +13,6 @@ public class ResumeModel : MonoBehaviour
         applicantData = GameDatabase.Instance.Applicants.applicants[index];
         //applicantData.Initialize(3, 3, 3);
     }
-<<<<<<< Updated upstream
-}
-=======
+
 }
 
->>>>>>> Stashed changes

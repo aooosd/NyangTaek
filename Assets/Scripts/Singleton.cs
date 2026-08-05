@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 /// <summary>씬 전환 후에도 하나의 인스턴스만 유지하는 제네릭 MonoBehaviour 기반 클래스입니다.</summary>
 /// <typeparam name="T">싱글턴으로 사용할 MonoBehaviour 형식입니다.</typeparam>
@@ -38,9 +38,6 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             Destroy(gameObject);
         }
     }
-<<<<<<< Updated upstream
-}
-=======
+
 }
 
->>>>>>> Stashed changes
